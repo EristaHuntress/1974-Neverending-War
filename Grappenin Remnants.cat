@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="fd7c-e50d-7877-8d5f" name="Grappenin Remnants" gameSystemId="88b5-ef51-6819-b77c" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Commander&apos;s Orders" id="150e-1af9-0552-781f" hidden="false">
+      <description>When a friendly model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Commander" hidden="false" id="3b70-43a7-de74-78c3" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="00c9-a9c6-5d2f-a7b5" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="da68-1711-61d8-862e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="1. COMMANDER" hidden="false" id="bc2a-daf8-7e87-b5e2" targetId="d8d3-be4a-a711-026c" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Profiles" id="9054-5130-4afd-dae7" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melee Focus" hidden="false" id="efcd-a54c-af67-1b47">
+              <profiles>
+                <profile name="Scavenged Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="8342-b9ab-043d-1294">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Polished Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="57c8-c20e-68eb-f47b">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Melee Focus" id="4f1c-d894-001c-2512" hidden="false">
+                  <description>This Commander may select 1 Commander Ability.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Versatile" id="0f73-e45e-dcb7-4561" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+                <infoLink name="Fear 2" id="eaef-6c61-3a8c-1dd7" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability Focus" hidden="false" id="c3f9-be63-e913-f840">
+              <profiles>
+                <profile name="Scavenged Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="650a-4ec4-f2d9-4698">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Scavenged Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="82c1-bd2c-f37f-c676">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Ability Focus" id="c004-f4ad-34e5-bf7b" hidden="false">
+                  <description>This Commander may select 2 Commander Abilities.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Versatile" id="fc3c-0eb7-1256-c843" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ranged Focus" hidden="false" id="c0bf-eb08-81e2-c555">
+              <profiles>
+                <profile name="Serviced Rifle" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="9778-4b5e-802e-4ada">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">30&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Fear 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Scavenged Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="09f6-ed23-1088-5a56">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Ranged Focus" id="a343-221d-1188-5177" hidden="false">
+                  <description>This Commander may select 1 Commander Ability.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Precise" id="8017-1685-2725-eac5" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+                <infoLink name="Fear 1" id="1772-7cfc-86fa-4b13" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9431-5c32-e559-1dab"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor Profiles" id="56c9-d15e-1578-5944" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Balanced Armor" hidden="false" id="4dfa-2b53-b835-257f">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="1edd-6574-a2a5-7a2d">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 8+, Commander, Grappenin</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dexterous 8+" id="445b-e0a1-172d-9c40" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+                <infoLink name="Resolute 5+" id="39df-e03e-fc54-2d5a" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Armor" hidden="false" id="2b3a-f629-8431-1075">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="1495-2bc3-55db-68a9">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 9+, Commander, Grappenin</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resolute 5+" id="8362-2842-684c-dafe" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+                <infoLink name="Dexterous 9+" id="89fb-de1c-0969-28c8" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Light Armor" hidden="false" id="c1cf-a155-4152-b5aa">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="5b68-df32-0eb9-994b">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">8&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">3+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Slink, Dexterous 6+, Commander, Grappenin</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dexterous 6+" id="d1fb-8bc0-5390-dee3" hidden="false" type="rule" targetId="b889-e85b-7e75-5412"/>
+                <infoLink name="Resolute 5+" id="5faa-a016-e767-aee6" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+                <infoLink name="Slink" id="ff0a-1db9-607e-83c4" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03d0-188c-0bea-37c7"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commander Stature" id="e723-e549-90d1-eb2a" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="096d-9d4e-0290-5fdc">
+              <profiles>
+                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="c97b-1243-38e0-cafa">
+                  <characteristics>
+                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="f2d5-54e8-d55b-f817">
+              <profiles>
+                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dc15-f871-f556-a3a0">
+                  <characteristics>
+                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71b2-484a-7022-1e45"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commander Abilities" id="bb99-8460-01f7-8d8a" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chain Of Command" hidden="false" id="7266-06e2-863b-2114">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f6b-b030-9d4c-b7a9"/>
+              </constraints>
+              <rules>
+                <rule name="Chain of Command" id="b5ad-c4bb-b2a4-a920" hidden="false">
+                  <description>All friendly Leader models within 18&quot; of your COMMANDER have the ranges of COMMANDER&apos;S ORDERS increased by 3&quot;.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Push Up" hidden="false" id="9057-450c-b4fc-003f">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="604c-85a3-5cb7-3040"/>
+              </constraints>
+              <rules>
+                <rule name="Push Up" id="731e-37f5-af14-feb4" hidden="false">
+                  <description>All friendly infantry models within 12&quot; of your COMMANDER do not suffer any penalties from the Versatile keyword.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rank Formation" hidden="false" id="a824-26fb-6815-f838">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3123-7f4a-7f0b-303a"/>
+              </constraints>
+              <rules>
+                <rule name="Rank Formation" id="e5fe-2d1d-faf2-882f" hidden="false">
+                  <description>All friendly infantry models within 18&quot; of your COMMANDER have a +1 to the ATTACK stat of ranged weapons if they did not move this activation.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0453-1d42-11b9-1133"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="0453-1d42-11b9-1133">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c3f9-be63-e913-f840" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Commander&apos;s Orders" id="d31e-c4db-81d0-1210" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Officer" hidden="false" id="fc6f-5814-4572-99b6">
+      <categoryLinks>
+        <categoryLink targetId="c711-21ec-ff7b-5c9b" id="d43f-8703-e623-6df1" primary="true" name="2. LEADER"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Officer" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a83f-fcdb-eef7-b077">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">3+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 8+, Leader, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Saber" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="747f-4e3f-75ba-9d35">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF PCC" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="87ff-221b-da45-f64b">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Bolster Morale" id="cb68-deae-8bd8-a6a0" hidden="false">
+          <description>All friendly models within 9&quot; may reroll any RESOLVE checks.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="f26f-88fd-2ed1-ce81" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Versatile" id="c5e8-97f1-2bbc-e5c5" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Resolute 5+" id="dcf4-a288-4397-9850" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+        <infoLink name="Dexterous 8+" id="9b03-6261-ca3e-7fbd" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="b61f-0b13-b9fd-102d">
+      <categoryLinks>
+        <categoryLink name="2. LEADER" hidden="false" id="da7d-75be-8ecb-1cf2" targetId="c711-21ec-ff7b-5c9b" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Lieutenant" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="33d2-65ab-9c59-358c">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">9&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">3+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 7+, Storm 2, Leader, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Trench Cleaner" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="35c1-5efc-052d-88f3">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Vintage Revolver" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="8a2e-7ae9-c2f6-9f5d">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile, Short Ranged</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Get Stuck In" id="1a3c-b467-9dc3-74b9" hidden="false">
+          <description>Friendly models within 9&quot; of this model of this model may reroll HIT CHANCE rolls if they declared a charge this turn.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="eaef-de87-1245-e60d" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Versatile" id="b54d-1ea5-e210-5896" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Fear 2" id="e6a5-59cc-9bc2-e5d4" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+        <infoLink name="Dexterous 7+" id="f42a-dffb-60d0-7614" hidden="false" type="rule" targetId="a083-4b25-1f6a-3b58"/>
+        <infoLink name="Resolute 5+" id="79b0-8458-2bee-8421" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+        <infoLink name="Storm 2" id="8e22-920f-4153-7c72" hidden="false" type="rule" targetId="def9-7348-b027-b66f"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="35"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Rifleman" hidden="false" id="935a-7631-912c-2427">
+      <categoryLinks>
+        <categoryLink targetId="fafa-f4e5-0d0a-3504" id="78b9-ef03-fbe6-6f32" primary="true" name="3. BATTLELINE"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Rifleman" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="f669-1112-9dd0-6b8b">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 7+, Dexterous 9+, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Rifle" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="9fc0-f001-5de2-4d10">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Bayonette" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="882b-46ba-e3fd-ef49">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Headshot" id="8c5e-52a8-0787-fd9c" hidden="false">
+          <description>When a unmodified HIT CHANCE roll of 6 is rolled, this model&apos;s weapon gain the [Fear 1] keyword until end of turn.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="162d-7ff2-ebaa-ad72" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 1" id="8ecf-ddab-caaf-584e" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Resolute 7+" id="2fb2-e732-8d58-5607" hidden="false" type="rule" targetId="ff4b-99d6-09c8-0e9e"/>
+        <infoLink name="Dexterous 9+" id="9de6-e4b0-fad6-5223" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
+        <infoLink name="Lance" id="47a0-609a-c428-0a43" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Precise" id="bf36-2b4a-0bab-3e59" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Trench Runner" hidden="false" id="69ce-192b-4628-83bb">
+      <categoryLinks>
+        <categoryLink name="3. BATTLELINE" hidden="false" id="4f08-5d73-4b08-4e11" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Trench Runner" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="6739-393b-5afb-eacb">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 7+, Dexterous 7+, Slink, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="a94d-f88b-4417-1925">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Trench Mace" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="14e6-6672-0932-3b2a">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Brutal Assault" id="4860-f246-7a7e-5c90" hidden="false">
+          <description>If this model declared a CHARGE this turn, this model increases the DODGE REDUCTION stat of the RAF Trench Mace by 1.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="ec02-bf87-13a1-dcc5" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 1" id="19b8-7ad4-701c-1d28" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Resolute 7+" id="caf0-10fd-c151-8dc8" hidden="false" type="rule" targetId="ff4b-99d6-09c8-0e9e"/>
+        <infoLink name="Dexterous 7+" id="cc9f-7bb5-f958-7d57" hidden="false" type="rule" targetId="a083-4b25-1f6a-3b58"/>
+        <infoLink name="Lance" id="ccc2-d660-a15a-0762" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Versatile" id="56c4-57da-545a-f205" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Slink" id="9600-9bc2-9173-fa0d" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Storm Trooper" hidden="false" id="bacf-46e5-be4b-1781">
+      <categoryLinks>
+        <categoryLink name="3. BATTLELINE" hidden="false" id="75d7-0b88-8871-951b" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Trench Runner" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="c78d-7a98-c55b-4b6e">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">9&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 7+, Dexterous 8+, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF SMG" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="375c-32f7-8b61-6329">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Rapid 2, Spread 1, Short Ranged</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Knife" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="824b-fa04-014e-848a">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Grenade" id="fbad-44c1-094c-fdbe" hidden="false">
+          <description>Once per game, during the shooting phase, this model may throw a grenade. If selected to do so, you may designate an circular area with a 2&quot; diameter, that is wholly within 9&quot; of the storm trooper model. Once the area is selected all models within that area take 2 damage.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="6349-2f09-8cbd-4662" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Rapid 2" id="2759-18c1-7cba-038b" hidden="false" type="rule" targetId="694e-5b08-766d-2018"/>
+        <infoLink name="Resolute 7+" id="b934-5a36-0a70-88d6" hidden="false" type="rule" targetId="ff4b-99d6-09c8-0e9e"/>
+        <infoLink name="Dexterous 8+" id="23a3-000b-76d8-0617" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+        <infoLink name="Spread 1" id="3f8b-efca-2e8d-f953" hidden="false" type="rule" targetId="279f-ab02-8b2b-5474"/>
+        <infoLink name="Short Ranged" id="6c4d-8257-0217-cac7" hidden="false" type="rule" targetId="dc8c-bcdb-86ed-e479"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Maratix Pattern Landship" hidden="false" id="08fd-16b5-30e0-f627">
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="b7ea-8091-6805-ce8e" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Maratix Pattern Landship" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="938c-1fed-e7b5-bd86">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">8&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">10</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">4</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">4</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Resolute 3+, Specialist, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF 80MM Cannon" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="1a6b-d522-5f18-01b9">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">6</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Explosive 2, Fear 3, Cumbersome, Versatile</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Tank Treads" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="c23d-6565-8116-b748">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Heavy Auto-Cannons" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="6f26-a651-9b16-3961">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Rapid 1, Cumbersome, Versatile</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="High Caliber" id="2cdc-3aeb-07e0-82f0" hidden="false">
+          <description>When declaring targets for the RAF 80MM Cannon, if a model has the Heavy keyword you may reroll HIT CHANCE rolls made against that model.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="5272-9bac-1a46-ad8e" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 3" id="2082-ff29-c5e5-3e3f" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
+        <infoLink name="Cumbersome" id="fa9a-9aa9-e709-2d91" hidden="false" type="rule" targetId="17a0-9833-fd10-e2e9"/>
+        <infoLink name="Resolute 3+" id="d607-e2a0-bf0d-5d09" hidden="false" type="rule" targetId="f139-e913-9c98-9d53"/>
+        <infoLink name="Versatile" id="e5b7-342a-38d3-f03a" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Explosive 2" id="0ad1-3d83-1363-e5b6" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
+        <infoLink name="Rapid 1" id="ff88-41db-49b9-3eac" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
+        <infoLink name="Multiple Guns" id="943e-2627-b956-ad2f" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="150"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Tank Hunter" hidden="false" id="49ab-1f08-cf58-977e">
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="4a14-d107-1f67-1205" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Tank Hunter" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="daff-3004-9042-7209">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 6+, Slink, Specialist, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Anti-Tank Rifle" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="418f-a760-6f88-4df8">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">4</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Cumbersome</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Trench Mace" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="a1e1-241d-03f7-d615">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Sure Shot" id="fdf4-08b5-d43f-1883" hidden="false">
+          <description>When you Declare a target for the RAF Anti-Tank Rifle, if that target has the Heavy Keyword increase the DODGE REDUCTION of this weapon by 4.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="66b3-e632-abef-4439" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Precise" id="b4ce-10d9-e63b-8dd2" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+        <infoLink name="Resolute 7+" id="b40a-e1bd-fc68-6d08" hidden="false" type="rule" targetId="ff4b-99d6-09c8-0e9e"/>
+        <infoLink name="Dexterous 7+" id="420f-60e9-62da-4534" hidden="false" type="rule" targetId="a083-4b25-1f6a-3b58"/>
+        <infoLink name="Cumbersome" id="3d2e-8dba-d280-7dd6" hidden="false" type="rule" targetId="17a0-9833-fd10-e2e9"/>
+        <infoLink name="Versatile" id="8232-5c3d-ad6e-24bd" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Fear 1" id="ee56-087d-f39e-1219" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Incinerator" hidden="false" id="4871-5197-aba2-9789">
+      <categoryLinks>
+        <categoryLink name="4. SPECIALISTS" hidden="false" id="7598-3022-4f87-e533" targetId="0334-a6c5-1a87-f595" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Incinerator" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="6614-f3a8-49e2-6d0f">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Specialist, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Flame Thrower" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="d8ce-632c-05c4-9fb4">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">12</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Trench Mace" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3e4b-a067-5ed9-6b7c">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Scorched Earth" id="030e-c561-539b-a79e" hidden="false">
+          <description>When declaring targets with the RAF Flame Thrower, you may target any number of models within range, but the ATTACKS of this profile must be divided between targets.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="b633-8bcc-2f17-3ec8" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 3" id="1117-5257-38da-2815" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
+        <infoLink name="Resolute 5+" id="b161-8122-6233-522b" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+        <infoLink name="Fear 1" id="97af-4ded-6dea-c374" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="45"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chemist" hidden="false" id="759e-90e9-7d03-60ab">
+      <categoryLinks>
+        <categoryLink name="4. SPECIALISTS" hidden="false" id="3b34-20c5-e4db-11d4" targetId="0334-a6c5-1a87-f595" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chemist" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="58ea-c493-db7b-c28a">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">9&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Specialist, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Shotgun" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="74d3-37e4-1f7e-6967">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Spread 2, Versatile, Close Quarters 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF Bayonete" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="a404-da8b-5b90-61d3">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Lance 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Gas Grenade" id="7b39-2ed3-c264-a2ea" hidden="false">
+          <description>Once per battle per Chemist model, during the shooting phase of this model, you may Designate a circle with a 6&quot; diameter wholly within 12&quot; of this model. All models that enter the circle take D3+1 damage and must make a RESOLVE check with a -2 modifier. This effect ends at the end of the turn.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="a287-4914-7b1a-a5af" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Lance" id="9b77-525a-200b-2eba" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Resolute 5+" id="5499-fd1d-8c1a-a4b5" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+        <infoLink name="Fear 1" id="3954-ad2d-e7d9-98c8" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Spread 2" id="8490-8ec9-da3c-293f" hidden="false" type="rule" targetId="96b6-6dd1-8a58-2256"/>
+        <infoLink name="Versatile" id="4ced-0d24-aaee-b6aa" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Close Quarters 2" id="f555-b966-4c39-b7db" hidden="false" type="rule" targetId="ab40-0d32-5a06-2070"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Mortar Bunker" hidden="false" id="2358-c60a-6d5f-a8c0">
+      <categoryLinks>
+        <categoryLink targetId="19ce-5b4b-a7ec-b47d" id="46ff-64f9-008e-5bfd" primary="true" name="5. FORTIFICATIONS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Machine Gun Nest" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="7a86-f39b-c045-cf30">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Mortar Battery" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3198-1ab7-75e5-4477">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">4</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Mortar, Fear 3, Explosive 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Defensive Armaments" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="8aeb-2f9f-0cc8-9f40">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">6</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Walking Barrage" id="6928-4034-2647-40e4" hidden="false">
+          <description>Once per battle, during this models activation, you may double the amount of ATTACKS this model&apos;s Mortar Battery weapon has, but for the rest of the activation this model suffers a -1 penalty to HIT CHANCE rolls.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="4c35-ce6c-2b1c-fb07" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 3" id="696c-9708-4601-26f0" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
+        <infoLink name="Fortification - Close" id="8aa3-c3db-3db7-c0df" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
+        <infoLink name="Explosive 2" id="96a3-8a9a-03f4-c59a" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
+        <infoLink name="Mortar" id="e06c-5bb7-b27a-5c7c" hidden="false" type="rule" targetId="e402-d816-d773-fd47"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="65"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Machine Gun Nest" hidden="false" id="94c8-8232-adf8-4b2f">
+      <categoryLinks>
+        <categoryLink name="5. FORTIFICATIONS" hidden="false" id="3e3f-905b-0c0a-76cc" targetId="19ce-5b4b-a7ec-b47d" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Machine Gun Nest" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="b7f2-cc38-d2a8-ad65">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification, Grappenin</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="RAF LMG (x3)" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="839a-7f8e-b630-9aa4">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Rapid 1, Fear 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Defensive Armaments" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="edad-25d1-10a1-5565">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">6</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Overlook" id="e3a2-4c4a-8f46-19f7" hidden="false">
+          <description>When an enemy ends a MOVEMENT or CHARGE within half range of this model, this model may immediately shoot with this model at the enemy model, with a -3 modifier to the HIT CHANCE roll. Once this has finished continue the enemy activation as normal.</description>
+        </rule>
+        <rule name="Commander&apos;s Orders" id="6854-46a5-3beb-8f39" hidden="false">
+          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
+- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
+- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 2" id="1e5a-22dc-0f11-dfdf" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+        <infoLink name="Rapid 1" id="ebc8-66a6-c342-1500" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
+        <infoLink name="Fortification - Close" id="7de8-46d3-9f41-9702" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
+        <infoLink name="Multiple Guns" id="9b4b-63fe-be8f-e27b" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>
