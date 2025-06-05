@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0f09-20ec-feff-c08e" name="Helioic Clans" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="88b5-ef51-6819-b77c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Royal Champion" hidden="false" id="262a-3cdc-3a6b-7a7d">
+      <categoryLinks>
+        <categoryLink targetId="c711-21ec-ff7b-5c9b" id="b03c-892f-1142-d7a4" primary="true" name="2. LEADER"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
+      </costs>
+      <profiles>
+        <profile name="Royal Champion" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="92f5-b15a-e194-3dce">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Autopistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="71ab-5c3a-e4f6-b645">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile, Short Ranged, Rapid 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Greatsword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="73f2-132e-411a-ccf5">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Cumbersome, Fear 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fear 2" id="2ac6-8157-b120-e0f7" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+        <infoLink name="Short Ranged" id="7805-5d16-36f4-0b47" hidden="false" type="rule" targetId="dc8c-bcdb-86ed-e479"/>
+        <infoLink name="Rapid 1" id="eea3-e5f5-1e8d-45d2" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
+        <infoLink name="Versatile" id="9e53-51a7-753b-3e7b" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Cumbersome" id="80c4-7725-d884-e378" hidden="false" type="rule" targetId="17a0-9833-fd10-e2e9"/>
+        <infoLink name="Unending Hordes" id="0c1d-8700-865c-fdea" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+      <rules>
+        <rule name="Royal Decree" id="3c63-a9f8-d9b7-fbd6" hidden="false">
+          <description>All friendly SLAVE models within 6&quot; of this model have their ATTACKS stat of their weapons increased by 1 and gain a +1 modifier to their HIT CHANCE stat.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Royal Guard" hidden="false" id="6220-c7a2-ef4b-1ed1">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="fafa-f4e5-0d0a-3504" id="556b-8e86-ecca-2aef" primary="true" name="3. BATTLELINE"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Royal Guard" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="c606-af9d-67d5-a6b8">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">5+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Revolver" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3364-fdec-8d9d-0029">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Greatsword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="46bf-88ab-867c-f2f0">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Move Move" id="701e-fef3-205a-8b3e" hidden="false">
+          <description>Friendly models with the SLAVE keyword within 6&quot; of this model have their MOVEMENT stat changed to 6&quot;.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Versatile" id="1b80-6d3d-6ac2-8caf" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Unending Hordes" id="bf8a-d1ac-7630-4cd3" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Poacher" hidden="false" id="0e3f-da9b-67aa-b3e6">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="2. LEADER" hidden="false" id="030c-6a78-3bdd-60da" targetId="c711-21ec-ff7b-5c9b" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Poacher" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="0425-3cd9-7778-f363">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">8&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Storm 2, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Autopistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="9792-a210-1b12-6176">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile, Short Ranged, Rapid 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trident" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="1640-8b25-bc55-6fbf">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Lance, Fear 3</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Enslavement" id="c6e8-0673-8d05-a4f9" hidden="false">
+          <description>If an enemy model is killed by this model gain REINFORCEMENT TOKENS equal to half the killed models points (rounded up).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 3" id="2ef4-d2d5-50d0-fa69" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
+        <infoLink name="Lance" id="b868-2d86-e3a7-e26a" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Precise" id="0e88-8e3b-2cc3-11e0" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+        <infoLink name="Versatile" id="a313-f74f-1772-c5d4" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Short Ranged" id="78e8-4f65-6bd5-4f58" hidden="false" type="rule" targetId="dc8c-bcdb-86ed-e479"/>
+        <infoLink name="Rapid 1" id="5b96-c80e-eadb-4967" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
+        <infoLink name="Storm 2" id="2813-f5a1-787a-7cb0" hidden="false" type="rule" targetId="def9-7348-b027-b66f"/>
+        <infoLink name="Unending Hordes" id="51e3-ce9f-99b9-9adf" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Slave" hidden="false" id="a1ce-29aa-4dad-198f">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="3. BATTLELINE" hidden="false" id="0170-ab02-df2c-a203" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Slave" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="4f2f-93ab-c150-a224">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">5&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">9+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">1</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Improvised Weapon" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="8d26-597c-217a-ad0d">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">6+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Expendable" id="db47-0aa7-15df-d503" hidden="false">
+          <description>This model does not trigger resolve checks on friendly model when this model dies, but cannot allow friendly models to regain resolve.</description>
+        </rule>
+        <rule name="Body Guard" id="96ff-4494-3b82-4d90" hidden="false">
+          <description>Friendly models with the Royal keyword within 1&quot; of this model cannot be targeted by ranged weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Unending Hordes" id="e617-a356-26a8-ca00" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Slinger" hidden="false" id="11ec-2e44-401c-cc26">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="3. BATTLELINE" hidden="false" id="6bcf-1da0-3d5c-7691" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Slinger" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="6552-02e2-559d-482b">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">5&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">9+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">1</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unarmed Strikes" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="0092-38d0-dac5-1a00">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">6+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">0</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sling" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="8bc6-9871-f975-1795">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">6+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Expendable" id="cf1d-e457-8aa0-7dc5" hidden="false">
+          <description>This model does not trigger resolve checks on friendly model when this model dies, but cannot allow friendly models to regain resolve.</description>
+        </rule>
+        <rule name="Body Guard" id="2307-40a1-5704-4ee8" hidden="false">
+          <description>Friendly models with the Royal keyword within 1&quot; of this model cannot be targeted by ranged weapons.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Versatile" id="bdb7-7c00-6e8c-c061" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Unending Hordes" id="c3fe-d600-54a6-e6df" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Gladiator" hidden="false" id="f3b6-d47a-af9d-3c9c">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="134d-5d00-2344-d065" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Gladiator" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="dc49-0071-0ef4-7762">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">5&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">6+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Dexterous 8+, Specialist, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gladius" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="0474-ba40-f8c2-94c3">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Fear 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Savagery" id="e8ba-d30c-71cf-15a9" hidden="false">
+          <description>If this model kills any enemy model this turn, all models with the SLAVE keyword within 6&quot; of this model increase the DAMAGE stat of melee weapons equipped by those models by 1.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear 1" id="7695-4f22-fe75-fe27" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Precise" id="a363-699a-3835-a6f1" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+        <infoLink name="Dexterous 8+" id="ea53-3cbf-accf-6901" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+        <infoLink name="Unending Hordes" id="0077-59ee-8118-31f3" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="1c93-3aea-a14f-0455" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bomber" hidden="false" id="0d7a-5ff0-7102-eb54">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="beaa-5653-3cc1-b891" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Slave" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="87fe-4375-2484-b3a9">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">2d6+2&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">7+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">1</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">7</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Specialist, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unarmed Strike" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="665c-2c71-8a06-8ffe">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">6+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">0</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Expendable" id="4fc3-2161-1693-ec34" hidden="false">
+          <description>This model does not trigger resolve checks on friendly model when this model dies, but cannot allow friendly models to regain resolve.</description>
+        </rule>
+        <rule name="Dead Switch" id="e277-5ffb-ef5d-6d30" hidden="false">
+          <description>The owner of this model may choose to kill this model at any time. When this model dies through any means all models within 3&quot; of this model take D6+1 damage and suffer a -4 to RESOLVE if a RESOLVE check is made due to this model killing another model.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="5841-385a-60ae-70d7" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Unending Hordes" id="36ad-ca2e-3693-eb72" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chariot" hidden="false" id="f7b2-fbe4-8e2f-0069">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="c5ff-5a33-1b3a-e70e" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chariot" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a492-2a35-f6a1-7e0a">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">12&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">4+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">3</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Royal, Storm 2, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Chariot Lance" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="628d-66fc-919f-690c">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Rusted HMG" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="45f6-d9ea-beba-8951">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile, Cumbersome, Rapid 1, Close Quarters 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Trample" id="e206-d26f-8b8a-8e1e" hidden="false">
+          <description>This model may move over infantry models when moving. If it does so this model takes 1 damage and the model that was moved over takes D3 damage.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="cd09-e880-503e-ea42" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Unending Hordes" id="2b3e-830c-ba73-c646" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pillager" hidden="false" id="a1be-7da1-d641-42d0">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="9203-ddca-2d8f-cb86" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Pillager" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="187c-77a0-2f1f-1c75">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">6+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Slink, Specialist, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Dagger" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="2958-e7b2-fcb2-27ab">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Lance</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Royal Revolver" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="628e-ad35-e0a8-6d53">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Spite" id="de9b-7077-67d6-931d" hidden="false">
+          <description>When this model is killed, if this model was carrying any supplies, those supplies are removed from the game instead of being dropped.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Versatile" id="25c9-8ee9-055d-f424" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+        <infoLink name="Unending Hordes" id="2907-9965-23e6-baf0" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="roster" shared="true" id="20ec-45d0-3382-205e" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Slave Pen" hidden="false" id="81b2-e282-6c53-d4e7">
+      <categoryLinks>
+        <categoryLink targetId="19ce-5b4b-a7ec-b47d" id="f8f7-1dfd-331a-626e" primary="true" name="5. FORTIFICATIONS"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="45"/>
+      </costs>
+      <profiles>
+        <profile name="Slave Pen" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="5354-0d93-e1f7-2c6f">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">-</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification - Close, Helioic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Slave Masses" id="dd57-675d-e053-b736" hidden="false">
+          <description>Whilst this model is still on the battlefield, when this model activates, generate REINFORCEMENT TOKENS equal to the current turn number multiplied by 5.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fortification - Close" id="73b1-e37c-7d72-c429" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
+        <infoLink name="Unending Hordes" id="7727-c26c-c65a-8a2a" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Trebuchet" hidden="false" id="0bb7-7aa2-0f80-93fb">
+      <categoryLinks>
+        <categoryLink name="5. FORTIFICATIONS" hidden="false" id="e210-01d2-f047-e723" targetId="19ce-5b4b-a7ec-b47d" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="65"/>
+      </costs>
+      <profiles>
+        <profile name="Trebuchet" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a58f-2efc-f6ae-4e07">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification - Close, Helioic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trebuchet" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="ec1c-d83e-b322-eff9">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-5</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">4</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Mortar, Fear 2, Explosive 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Defensive Spears" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="57a1-4f73-608b-a644">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Fortification - Close" id="6816-2375-e19a-8e01" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
+        <infoLink name="Explosive 1" id="6bc0-a6d1-71ae-0411" hidden="false" type="rule" targetId="a873-5070-217a-2179"/>
+        <infoLink name="Fear 2" id="0f08-1d0d-a3ea-9cc6" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+        <infoLink name="Mortar" id="521f-6643-eb4d-bb21" hidden="false" type="rule" targetId="e402-d816-d773-fd47"/>
+        <infoLink name="Unending Hordes" id="3ab0-d173-4cbf-e1aa" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Commander" hidden="false" id="8940-078f-1232-b735" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3f38-657e-920d-ef4c" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="1438-f50e-2868-5080" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="1. COMMANDER" hidden="false" id="944f-f8dc-5233-de22" targetId="d8d3-be4a-a711-026c" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Profiles" id="4439-7095-d251-d65b" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melee Focus" hidden="false" id="aa62-f0e7-f3f5-023e">
+              <profiles>
+                <profile name="Scavenged Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="9026-6ca3-81e2-a005">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Polished Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3155-7e10-c355-e541">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Melee Focus" id="0bca-9fe5-e8ca-12a5" hidden="false">
+                  <description>This Commander may select 1 Commander Ability.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Versatile" id="fee1-5615-7150-73b1" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+                <infoLink name="Fear 2" id="4756-59c0-ea0f-f2f7" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability Focus" hidden="false" id="2db6-0a6b-38e0-287b">
+              <profiles>
+                <profile name="Scavenged Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="41ee-53d2-f767-7cf0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Scavenged Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="7396-6797-b782-de8a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Ability Focus" id="7fb0-af3c-2c0c-3189" hidden="false">
+                  <description>This Commander may select 2 Commander Abilities.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Versatile" id="6fef-f0d1-360c-9257" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ranged Focus" hidden="false" id="2bc5-8e98-fc1d-fa65">
+              <profiles>
+                <profile name="Serviced Rifle" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3ddd-8dcb-2008-9755">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">30&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Fear 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Scavenged Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="0ab2-e83f-dd73-dbf9">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Ranged Focus" id="1f39-ec82-f8b6-2a1a" hidden="false">
+                  <description>This Commander may select 1 Commander Ability.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Precise" id="b329-c0f1-4a88-a559" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+                <infoLink name="Fear 1" id="de1b-6c44-3de1-8c00" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc83-78df-6e9e-d35a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor Profiles" id="9611-f85b-7cf7-db58" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Balanced Armor" hidden="false" id="b074-7087-edd4-384f">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="affd-b589-b1d7-8b1b">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Resolute 5+, Dexterous 8+, Commander, Helioic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dexterous 8+" id="b2d1-2a42-067f-14d4" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+                <infoLink name="Resolute 5+" id="bc97-7c58-070b-f7ab" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Armor" hidden="false" id="b7c2-8cb5-3af6-76b4">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="aaee-063b-ca67-9d13">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Resolute 5+, Dexterous 9+, Commander, Helioic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resolute 5+" id="3da6-1c43-b56d-54fb" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+                <infoLink name="Dexterous 9+" id="0e8c-fde8-3fd3-ab87" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Light Armor" hidden="false" id="83e2-6e34-e6cb-e60a">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="4c6f-fbb7-bea9-3593">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">8&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">3+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Resolute 5+, Slink, Dexterous 6+, Commander, Helioic</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dexterous 6+" id="ee3e-21a6-9d3e-846c" hidden="false" type="rule" targetId="b889-e85b-7e75-5412"/>
+                <infoLink name="Resolute 5+" id="ce7d-a7df-0630-7d5c" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+                <infoLink name="Slink" id="21f7-9315-43c9-da97" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="624e-3a73-973f-be66"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commander Stature" id="cb38-7c36-8be2-135c" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="da24-78bf-1427-b572">
+              <profiles>
+                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="e23c-c054-9953-8d78">
+                  <characteristics>
+                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="fd9b-7f67-a502-dec8">
+              <profiles>
+                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="ab16-137e-2ed8-17b6">
+                  <characteristics>
+                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d6-aa02-e05d-08a8"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commander Abilities" id="2674-6a08-899f-0acf" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Crack the Whip" hidden="false" id="29a3-c7d4-2648-e123">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d4db-f77f-4377-570e"/>
+              </constraints>
+              <rules>
+                <rule name="Crack the Whip" id="8861-fe4d-a26f-d76b" hidden="false">
+                  <description>All friendly models with the SLAVE keyword within 18&quot; of the COMMANDER have their MOVEMENT stat increased by 1.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cull the Weak" hidden="false" id="b803-3f68-d1d6-87e4">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e629-bcc1-a8dd-e106"/>
+              </constraints>
+              <rules>
+                <rule name="Cull the Weak" id="ac45-437d-440e-49d2" hidden="false">
+                  <description>If a friendly model with the SLAVE keyword fails a resolve check within 18&quot; of your COMMANDER model and is within 6&quot; of a model with the ROYAL keyword you may destroy that SLAVE model. If you do so all other models with the SLAVE keyword within 6&quot; of the destroyed SLAVE model auto-succeed any RESOLVE check made for the rest of the turn. Any SLAVE model destroyed this way does not grant any REINFORCEMENT TOKENS.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Stockholm Syndrome" hidden="false" id="411e-0b70-ed36-5f54">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1068-e5eb-d7ad-5e39"/>
+              </constraints>
+              <rules>
+                <rule name="Stockholm Syndrome" id="5009-0d75-f57b-9eee" hidden="false">
+                  <description>If a enemy model fails a RESOLVE check within 18&quot; of your COMMANDER gain 10 REINFORCEMENT TOKENS. If the model was BATTLESHOCKED gain 15 REINFORCEMENT TOKENS instead.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="92a7-00af-a350-12ce"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="92a7-00af-a350-12ce">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="2db6-0a6b-38e0-287b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Unending Hordes" id="c672-cb0d-e47a-1f79" hidden="false">
+          <description>At the start of the battle gain 25 REINFORCEMENT TOKENS. When a friendly model with the SLAVE keyword dies within 6&quot; of a friendly model with the ROYAL keyword, gain REINFORCEMENT TOKENS equal to the points the model was worth. At the beginning of any turn, before any model has been activated, you can choose to revive any dead friendly models with the SLAVE keyword, but you must spent REINFORCEMENT TOKENS equal to the points that model is worth in order to do so.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedRules>
+    <rule name="Unending Hordes" id="54c2-19b8-4d4b-f4c2" hidden="false">
+      <description>At the start of the battle gain 25 REINFORCEMENT TOKENS. When a friendly model with the SLAVE keyword dies within 6&quot; of a friendly model with the ROYAL keyword, gain REINFORCEMENT TOKENS equal to the points the model was worth. At the beginning of any turn, before any model has been activated, you can choose to revive any dead friendly models with the SLAVE keyword, but you must spent REINFORCEMENT TOKENS equal to the points that model is worth in order to do so.</description>
+    </rule>
+  </sharedRules>
+</catalogue>
