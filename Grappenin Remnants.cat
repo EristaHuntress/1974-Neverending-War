@@ -6,7 +6,8 @@
 - Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
 - Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
 - Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
+- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation. 
+Models can only benefit from 1 of the COMMANDER&apos;S ORDERS.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
@@ -315,18 +316,12 @@
         <rule name="Bolster Morale" id="cb68-deae-8bd8-a6a0" hidden="false">
           <description>All friendly models within 9&quot; may reroll any RESOLVE checks.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="f26f-88fd-2ed1-ce81" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Versatile" id="c5e8-97f1-2bbc-e5c5" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
         <infoLink name="Resolute 5+" id="dcf4-a288-4397-9850" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
         <infoLink name="Dexterous 8+" id="9b03-6261-ca3e-7fbd" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+        <infoLink name="Commander&apos;s Orders" id="57ce-db2c-ab0c-62a3" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
@@ -375,13 +370,6 @@
         <rule name="Get Stuck In" id="1a3c-b467-9dc3-74b9" hidden="false">
           <description>Friendly models within 9&quot; of this model of this model may reroll HIT CHANCE rolls if they declared a charge this turn.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="eaef-de87-1245-e60d" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Versatile" id="b54d-1ea5-e210-5896" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
@@ -389,6 +377,7 @@
         <infoLink name="Dexterous 7+" id="f42a-dffb-60d0-7614" hidden="false" type="rule" targetId="a083-4b25-1f6a-3b58"/>
         <infoLink name="Resolute 5+" id="79b0-8458-2bee-8421" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
         <infoLink name="Storm 2" id="8e22-920f-4153-7c72" hidden="false" type="rule" targetId="def9-7348-b027-b66f"/>
+        <infoLink name="Commander&apos;s Orders" id="fb1a-3c4a-da47-d375" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="35"/>
@@ -437,13 +426,6 @@
         <rule name="Headshot" id="8c5e-52a8-0787-fd9c" hidden="false">
           <description>When a unmodified HIT CHANCE roll of 6 is rolled, this model&apos;s weapon gain the [Fear 1] keyword until end of turn.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="162d-7ff2-ebaa-ad72" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fear 1" id="8ecf-ddab-caaf-584e" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
@@ -451,6 +433,7 @@
         <infoLink name="Dexterous 9+" id="9de6-e4b0-fad6-5223" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
         <infoLink name="Lance" id="47a0-609a-c428-0a43" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
         <infoLink name="Precise" id="bf36-2b4a-0bab-3e59" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+        <infoLink name="Commander&apos;s Orders" id="fad9-17d1-13c7-ba92" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="25"/>
@@ -499,13 +482,6 @@
         <rule name="Brutal Assault" id="4860-f246-7a7e-5c90" hidden="false">
           <description>If this model declared a CHARGE this turn, this model increases the DODGE REDUCTION stat of the RAF Trench Mace by 1.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="ec02-bf87-13a1-dcc5" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fear 1" id="19b8-7ad4-701c-1d28" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
@@ -514,6 +490,7 @@
         <infoLink name="Lance" id="ccc2-d660-a15a-0762" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
         <infoLink name="Versatile" id="56c4-57da-545a-f205" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
         <infoLink name="Slink" id="9600-9bc2-9173-fa0d" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
+        <infoLink name="Commander&apos;s Orders" id="2a57-3708-6b6b-e6fb" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="20"/>
@@ -562,13 +539,6 @@
         <rule name="Grenade" id="fbad-44c1-094c-fdbe" hidden="false">
           <description>Once per game, during the shooting phase, this model may throw a grenade. If selected to do so, you may designate an circular area with a 2&quot; diameter, that is wholly within 9&quot; of the storm trooper model. Once the area is selected all models within that area take 2 damage.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="6349-2f09-8cbd-4662" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Rapid 2" id="2759-18c1-7cba-038b" hidden="false" type="rule" targetId="694e-5b08-766d-2018"/>
@@ -576,6 +546,7 @@
         <infoLink name="Dexterous 8+" id="23a3-000b-76d8-0617" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
         <infoLink name="Spread 1" id="3f8b-efca-2e8d-f953" hidden="false" type="rule" targetId="279f-ab02-8b2b-5474"/>
         <infoLink name="Short Ranged" id="6c4d-8257-0217-cac7" hidden="false" type="rule" targetId="dc8c-bcdb-86ed-e479"/>
+        <infoLink name="Commander&apos;s Orders" id="163a-b48b-990f-3401" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="25"/>
@@ -635,13 +606,6 @@
         <rule name="High Caliber" id="2cdc-3aeb-07e0-82f0" hidden="false">
           <description>When declaring targets for the RAF 80MM Cannon, if a model has the Heavy keyword you may reroll HIT CHANCE rolls made against that model.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="5272-9bac-1a46-ad8e" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fear 3" id="2082-ff29-c5e5-3e3f" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
@@ -651,6 +615,7 @@
         <infoLink name="Explosive 2" id="0ad1-3d83-1363-e5b6" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
         <infoLink name="Rapid 1" id="ff88-41db-49b9-3eac" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
         <infoLink name="Multiple Guns" id="943e-2627-b956-ad2f" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+        <infoLink name="Commander&apos;s Orders" id="da16-15d7-2018-a4ed" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="150"/>
@@ -699,13 +664,6 @@
         <rule name="Sure Shot" id="fdf4-08b5-d43f-1883" hidden="false">
           <description>When you Declare a target for the RAF Anti-Tank Rifle, if that target has the Heavy Keyword increase the DODGE REDUCTION of this weapon by 4.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="66b3-e632-abef-4439" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Precise" id="b4ce-10d9-e63b-8dd2" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
@@ -714,6 +672,7 @@
         <infoLink name="Cumbersome" id="3d2e-8dba-d280-7dd6" hidden="false" type="rule" targetId="17a0-9833-fd10-e2e9"/>
         <infoLink name="Versatile" id="8232-5c3d-ad6e-24bd" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
         <infoLink name="Fear 1" id="ee56-087d-f39e-1219" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Commander&apos;s Orders" id="d8bb-22d6-e0b2-c3e2" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
@@ -762,18 +721,12 @@
         <rule name="Scorched Earth" id="030e-c561-539b-a79e" hidden="false">
           <description>When declaring targets with the RAF Flame Thrower, you may target any number of models within range, but the ATTACKS of this profile must be divided between targets.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="b633-8bcc-2f17-3ec8" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fear 3" id="1117-5257-38da-2815" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
         <infoLink name="Resolute 5+" id="b161-8122-6233-522b" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
         <infoLink name="Fear 1" id="97af-4ded-6dea-c374" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Commander&apos;s Orders" id="b7a9-198f-f025-77ff" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="45"/>
@@ -822,13 +775,6 @@
         <rule name="Gas Grenade" id="7b39-2ed3-c264-a2ea" hidden="false">
           <description>Once per battle per Chemist model, during the shooting phase of this model, you may Designate a circle with a 6&quot; diameter wholly within 12&quot; of this model. All models that enter the circle take D3+1 damage and must make a RESOLVE check with a -2 modifier. This effect ends at the end of the turn.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="a287-4914-7b1a-a5af" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Lance" id="9b77-525a-200b-2eba" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
@@ -837,6 +783,7 @@
         <infoLink name="Spread 2" id="8490-8ec9-da3c-293f" hidden="false" type="rule" targetId="96b6-6dd1-8a58-2256"/>
         <infoLink name="Versatile" id="4ced-0d24-aaee-b6aa" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
         <infoLink name="Close Quarters 2" id="f555-b966-4c39-b7db" hidden="false" type="rule" targetId="ab40-0d32-5a06-2070"/>
+        <infoLink name="Commander&apos;s Orders" id="5098-ea89-99e4-f8e6" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
@@ -885,19 +832,13 @@
         <rule name="Walking Barrage" id="6928-4034-2647-40e4" hidden="false">
           <description>Once per battle, during this models activation, you may double the amount of ATTACKS this model&apos;s Mortar Battery weapon has, but for the rest of the activation this model suffers a -1 penalty to HIT CHANCE rolls.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="4c35-ce6c-2b1c-fb07" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fear 3" id="696c-9708-4601-26f0" hidden="false" type="rule" targetId="6a0b-71a8-a0f6-b1ae"/>
         <infoLink name="Fortification - Close" id="8aa3-c3db-3db7-c0df" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
         <infoLink name="Explosive 2" id="96a3-8a9a-03f4-c59a" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
         <infoLink name="Mortar" id="e06c-5bb7-b27a-5c7c" hidden="false" type="rule" targetId="e402-d816-d773-fd47"/>
+        <infoLink name="Commander&apos;s Orders" id="03fc-313e-ebaa-d9f6" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="65"/>
@@ -946,19 +887,13 @@
         <rule name="Overlook" id="e3a2-4c4a-8f46-19f7" hidden="false">
           <description>When an enemy ends a MOVEMENT or CHARGE within half range of this model, this model may immediately shoot with this model at the enemy model, with a -3 modifier to the HIT CHANCE roll. Once this has finished continue the enemy activation as normal.</description>
         </rule>
-        <rule name="Commander&apos;s Orders" id="6854-46a5-3beb-8f39" hidden="false">
-          <description>When a model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
-- Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation.</description>
-        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fear 2" id="1e5a-22dc-0f11-dfdf" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
         <infoLink name="Rapid 1" id="ebc8-66a6-c342-1500" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
         <infoLink name="Fortification - Close" id="7de8-46d3-9f41-9702" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
         <infoLink name="Multiple Guns" id="9b4b-63fe-be8f-e27b" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+        <infoLink name="Commander&apos;s Orders" id="1977-2c34-aa01-08ed" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
