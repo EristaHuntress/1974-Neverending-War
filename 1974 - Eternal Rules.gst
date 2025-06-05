@@ -191,8 +191,8 @@
     <rule name="Spread 2" id="96b6-6dd1-8a58-2256" hidden="false">
       <description>When a model is equipped with a weapon with Spread, the DODGE REDUCTION stat of this weapon increases by 2 when within half range.</description>
     </rule>
-    <rule name="Multiple Guns" id="7ec1-2c5f-6162-a344" hidden="false">
-      <description>When a model has multiple ranged weapons it may fire all of them in one activation, and may declare different targets for each weapon.</description>
+    <rule name="Multiple Weapons" id="7ec1-2c5f-6162-a344" hidden="false">
+      <description>When a model has multiple weapons it may use all of them in one activation, and may declare different targets for each weapon.</description>
     </rule>
   </sharedRules>
 </gameSystem>

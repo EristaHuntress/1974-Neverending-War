@@ -7,7 +7,7 @@
 - Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
 - Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
 - Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation. 
-Models can only benefit from 1 of the COMMANDER&apos;S ORDERS.</description>
+Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</description>
     </rule>
   </sharedRules>
   <selectionEntries>
@@ -794,7 +794,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS.</description>
         <categoryLink targetId="19ce-5b4b-a7ec-b47d" id="46ff-64f9-008e-5bfd" primary="true" name="5. FORTIFICATIONS"/>
       </categoryLinks>
       <profiles>
-        <profile name="Machine Gun Nest" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="7a86-f39b-c045-cf30">
+        <profile name="Mortar Bunker" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="7a86-f39b-c045-cf30">
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>

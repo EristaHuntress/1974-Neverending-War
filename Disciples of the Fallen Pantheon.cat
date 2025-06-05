@@ -1,0 +1,1894 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="e6ab-42f3-ab58-6a9b" name="Disciples of the Fallen Pantheon" gameSystemId="88b5-ef51-6819-b77c" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Blessed Rewards" id="2b29-584c-134d-4ef9" hidden="false">
+      <description>Each model in your army may be equipped with one of the following Blessings from one of the Pantheonic Gods:
+- Blessing of Sarielle: This model may reroll 1 single die per turn.
+- Blessing of Xeritch: 1 weapon equipped by this model has a +1 modifier to the HIT CHANCE stat.
+- Blessing of Careen: 1 weapon equipped by this model has a +1 modifier to the DAMAGE stat.</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="model" import="true" name="Commander" hidden="false" id="ed04-537a-d7b8-0073" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="48c0-6038-a709-2acb" includeChildSelections="true" includeChildForces="true"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="ba33-3583-1729-0ff7" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="1. COMMANDER" hidden="false" id="689e-30c6-38f9-a71f" targetId="d8d3-be4a-a711-026c" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon Profiles" id="888e-e427-0da0-8fef" hidden="false" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Melee Focus" hidden="false" id="974c-5a5e-3e9b-a9c9">
+              <profiles>
+                <profile name="Scavenged Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="e94f-a7a4-9778-2deb">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Polished Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="59a1-711e-8cca-3d0a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Melee Focus" id="4be1-12d3-b169-b6b6" hidden="false">
+                  <description>This Commander may select 1 Commander Ability.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Versatile" id="6891-f61e-8f2c-93ea" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+                <infoLink name="Fear 2" id="a927-038a-efab-68cc" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ability Focus" hidden="false" id="4e86-d747-2497-5bb9">
+              <profiles>
+                <profile name="Scavenged Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="80f4-e2be-13ef-2669">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Scavenged Pistol" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="d232-5baf-df96-a478">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Ability Focus" id="62b6-a8e6-f558-3ab4" hidden="false">
+                  <description>This Commander may select 2 Commander Abilities.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Versatile" id="41b1-c022-3102-bea8" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Ranged Focus" hidden="false" id="82b8-25be-03d6-e99b">
+              <profiles>
+                <profile name="Serviced Rifle" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="6282-4b83-90ee-ce4a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">30&quot;</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Fear 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Scavenged Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="6afe-eb05-0b89-7bef">
+                  <characteristics>
+                    <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+                    <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+                    <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+                    <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+                    <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+                    <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+                    <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Ranged Focus" id="803f-b54f-fde0-0086" hidden="false">
+                  <description>This Commander may select 1 Commander Ability.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink name="Precise" id="dc7d-33b1-054d-db9b" hidden="false" type="rule" targetId="c563-39a5-122c-100b"/>
+                <infoLink name="Fear 1" id="f2c4-0a0e-7471-e38c" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd2d-2c54-a71b-445a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Armor Profiles" id="42a3-8fd6-20f7-5fb7" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Balanced Armor" hidden="false" id="b6bc-f5f6-d60b-4c66">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="c904-d2c4-cee3-781e">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 8+, Commander, Grappenin</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dexterous 8+" id="41b4-fc54-649f-75e2" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+                <infoLink name="Resolute 5+" id="4416-354f-8cbc-fbed" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Armor" hidden="false" id="41fe-5665-12a9-a406">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="8a93-2a97-5d58-1b32">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 9+, Commander, Grappenin</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Resolute 5+" id="1899-1727-67fa-cf7d" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+                <infoLink name="Dexterous 9+" id="3516-08d9-ffef-561e" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Light Armor" hidden="false" id="3880-bfe2-51f7-71e6">
+              <profiles>
+                <profile name="Commander" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="5fdd-bb31-c811-ccc9">
+                  <characteristics>
+                    <characteristic name="Move" typeId="2461-dd54-666a-0e1f">8&quot;</characteristic>
+                    <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+                    <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+                    <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">3+</characteristic>
+                    <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
+                    <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+                    <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Slink, Dexterous 6+, Commander, Grappenin</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Dexterous 6+" id="adac-6e92-d4b6-1ea0" hidden="false" type="rule" targetId="b889-e85b-7e75-5412"/>
+                <infoLink name="Resolute 5+" id="9f36-ad39-3c31-812e" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+                <infoLink name="Slink" id="83e9-0bcf-9181-937a" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41bc-f23a-4f9e-ebb0"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commander Stature" id="d748-7d9e-adc1-ef7d" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="c12c-dcff-6b23-8785">
+              <profiles>
+                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="cf29-25ac-6966-d502">
+                  <characteristics>
+                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="aa3d-2958-4a75-16e8">
+              <profiles>
+                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0201-19af-1a5b-64e3">
+                  <characteristics>
+                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b26a-2591-a2f6-df7a"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Commander Abilities" id="33a4-0307-4601-3823" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ambush Squad" hidden="false" id="8ade-5d69-6195-4fc5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5730-f2bc-a4f0-3e33"/>
+              </constraints>
+              <rules>
+                <rule name="Ambush Squad" id="043c-d492-91a3-5a21" hidden="false">
+                  <description>If a friendly model is within 18&quot; of your COMMANDER and didn&apos;t move this turn that model they gain +1 to HIT CHANCE rolls.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sand Screen" hidden="false" id="cac9-ade4-529d-fa3e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1815-4465-3e08-d074"/>
+              </constraints>
+              <rules>
+                <rule name="Sand Screen" id="c16f-e1ac-c0a4-f261" hidden="false">
+                  <description>When you activate your COMMANDER, before any other action, you may choose to swap the locations of 2 friendly infantry models within 18&quot; of your COMMANDER.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Eye of the Storm" hidden="false" id="51a0-006f-180a-a5bd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b46c-a385-315b-0745"/>
+              </constraints>
+              <rules>
+                <rule name="Eye of the Storm" id="db36-fe15-889d-40ef" hidden="false">
+                  <description>The area within 3&quot; of the center of your COMMANDER model counts as your area of control for the purpose of AMBUSH TACTICS. Models may not be set up in this area during army deployment and supplies may not be scored in this area.</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c444-8824-d585-7c78"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="c444-8824-d585-7c78">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4e86-d747-2497-5bb9" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Blessing Selection" id="d96f-43b1-054c-494d" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cfae-6b8d-554f-fa2d"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="fa7e-c5b9-cfa6-edb9">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="8850-ec77-807d-3543" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="bcb7-7d4a-970f-ab38" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="96d0-9633-21e3-5e95">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0a74-9dd1-a148-2916">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="6bd3-8935-d910-9c2c">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="675a-8bf9-63c6-ab24" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6308-9e2b-3d5f-9c09"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="ed39-6661-196d-f9e8">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="545e-66d3-32d5-60f3" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="d126-8465-3da9-a2ef">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="2bcb-babc-cf67-c08a" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="2047-4799-8204-e0d7" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="66ba-bbbb-bfc8-d9cc">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="769f-842a-7492-0c56">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="8e8b-7650-88fd-ecd6">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dfb9-e213-4a2e-9e5d" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c89a-70ed-6c42-49f5"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="5f7a-6a4b-845c-cd1e" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Arch Magus" hidden="false" id="4bdb-d0e6-6b59-90eb">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c711-21ec-ff7b-5c9b" id="2071-4d9f-bb13-e6a0" primary="true" name="2. LEADER"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Arch Magus" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="5222-f521-d7f2-0e59">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 9+, Leader, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Elemental Strike" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="78df-7486-145e-30df">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">-</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Explosive 2, Fear 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Short Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="977d-accb-e1e6-388f">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="3bac-6d39-45c1-14ff" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Fear 1" id="d53b-a375-54c6-e9b1" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Explosive 2" id="aeaf-e3e3-d864-4cf9" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
+        <infoLink name="Resolute 5+" id="b33b-ebf6-6c83-d9fb" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+        <infoLink name="Dexterous 9+" id="4a92-1341-9809-6c6a" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="3bdd-a7f0-b1f9-acf0" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84f8-c0c8-265d-c6b7"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="73a9-9978-5782-8c13">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="a855-3f81-1f24-8d56" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="04d5-9014-ecd9-dafd" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="4f47-0241-52ad-2f8a">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="626a-8777-6577-6b57">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="83d6-ab9c-fd46-4606">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0acd-dfb2-ed8c-7e27" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="925b-da1a-8b6d-c23b"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="5f11-a0aa-514a-9dbb">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="4d4b-8f06-ac52-9923" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="f61c-358d-73d4-2369">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="e86f-9c9e-d804-c552" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="950a-11a7-89ce-9b97" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="d1d9-67fc-ccb3-6204">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="8dac-34b1-ae48-c850">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="44be-59c4-4095-4440">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5b91-47fb-22af-fd77" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6153-e1ef-bead-9934"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Influence of Magic" id="ef03-122e-e263-d600" hidden="false">
+          <description>The Elemental Strike weapon has a CALIBER stat equal to the target model&apos;s TOUGHNESS stat.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Chosen One" hidden="false" id="0a49-4c76-a659-2e42">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="90"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="c711-21ec-ff7b-5c9b" id="f931-7cee-522e-af59" primary="true" name="2. LEADER"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Chosen One" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="1ed0-43c6-a305-1e21">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">8+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">4</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Knight, Resolute 3+, Dexterous 9+, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Holy Zweihander" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="6b0e-2c82-45e8-2657">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-6</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Fear 3, Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="7c22-c316-ada7-6b08" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Fear 1" id="9c44-cb5d-f8aa-3720" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Explosive 2" id="b888-1429-2230-eb5e" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="7879-4b54-a292-c67f" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7054-5f98-30b0-c8fe"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="5c3f-9bc0-ee64-d3e2">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="c759-efc7-ed4a-76fd" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="af34-7af6-f266-88ce" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="6ba8-dd29-1b30-4936">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="a15e-1ac4-1477-b250">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="5dd2-1125-3cf6-02a2">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dba0-6a4d-53bc-2d38" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a09-c313-b214-3338"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="4dae-4538-3d2e-0b21">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="3309-6131-0830-cb46" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="700a-40eb-1f6d-8ea9">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="b2db-4ea6-4d29-3357" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="89f4-c399-86e2-b5da" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="fcb2-85c2-cc05-4209">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="b1c3-521e-efa6-d36d">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="df36-08be-dfca-8392">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="17f9-a113-1323-ade7" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2097-1757-dc4f-749a"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Resolute Figurehead" id="c7a4-efc2-4100-7871" hidden="false">
+          <description>This model may fight back a total of 5 times in a turn instead of the normal 2.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Knight" hidden="false" id="8457-e4a0-8ef4-e71f">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="fafa-f4e5-0d0a-3504" id="1af0-fb4a-1064-8406" primary="true" name="3. BATTLELINE"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Knight" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="1bd4-4df1-013c-da0f">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">4+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">8+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Knight, Resolute 6+, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Long Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3daa-6784-35e1-d0d0">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="2bf7-c29c-1924-5cce" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Fear 1" id="bade-9186-2653-744c" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+        <infoLink name="Resolute 6+" id="7b00-4b41-e4ab-0f02" hidden="false" type="rule" targetId="2e45-02ce-37e8-5ecd"/>
+        <infoLink name="Lance" id="129b-0ef0-d5ee-5392" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="cea2-85de-e855-2616" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="465c-f7ce-aa7c-f6e3"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="af81-ad9f-9ec6-9918">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="c9a8-8d28-c8f2-1905" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="b293-d46f-e00a-8501" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="69ea-fb08-d227-7f6c">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="82a3-3526-45ba-4de5">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="d09a-0f82-20c0-04c8">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="7026-7337-f3be-3508" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f97a-7d74-1676-2d6e"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="3501-f2b4-2196-722a">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="8d4d-2fd5-4a08-2e72" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="f8c9-d516-f8c0-75bc">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="475e-23c8-e837-4c3f" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="89c1-3da7-5890-7926" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="3f98-bd1e-c09e-8b13">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="8a5b-3e1b-6fdf-8cbe">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="329e-ad63-794c-8a70">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5e77-7bbc-2464-23af" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="986d-e992-5db6-f99f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Combat Stance" id="9f22-d436-f0cf-fc63" hidden="false">
+          <description>If this model declares a non-LEADER INFANTRY model as the target for their attack this model gains a +1 modifier to the HIT CHANCE stat.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Bowman" hidden="false" id="955e-821c-d838-597c">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="3. BATTLELINE" hidden="false" id="78d3-3037-0434-004d" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Bowman" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a337-318d-73e4-97a2">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">5+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Peasant, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Long Bow" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="463b-b342-6ea8-fa23">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dagger" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="166d-5c3c-2a08-5e70">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="2e70-aafe-2321-fee5" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="cc26-2955-1aad-f632" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c36-e2ed-8ef6-5c4b"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="2679-b465-92d9-0d3c">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="f501-e320-ba0b-16d7" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="0453-21ef-061d-a5b6" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="186d-3d86-0737-ba93">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="28d8-3bbb-36a5-2437">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="43d4-89a5-9033-70a1">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="77cc-80cc-4698-f7d1" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c1d7-a4cb-8e3a-a701"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="96ac-4dae-fec2-2c7f">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="1336-4db5-6575-af47" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="f6b5-bd27-ccc7-ab0b">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="9fc1-9c30-43df-9dd9" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="1116-6054-3afb-5871" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="30a3-95ce-966c-a88e">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="6b06-c897-cc29-5898">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="44ff-013d-62c1-6765">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="98ba-9b0f-3b89-8df4" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0620-fa94-9694-cfcf"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Backline" id="b552-0e8d-be09-0cd4" hidden="false">
+          <description>This model increases the ATTACK stat of the Long Bow equipped by this model if not within 9&quot; of an enemy model.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Foot Soldier" hidden="false" id="0285-b227-b334-be43">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="3. BATTLELINE" hidden="false" id="08df-faeb-b5c2-1825" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Foot Soldier" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="9fcb-7a96-6919-4566">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">5+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Peasant, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Short Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="0687-141f-ef93-8a57">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="39c2-fbe7-944b-204c" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="e070-b1bb-819b-6fdc" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc79-f369-d3ca-0ad7"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="a833-a475-580e-d20a">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="d532-a438-17fc-16f5" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="7307-e4c8-acae-d604" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="e14d-e97e-35a7-bc92">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="e6ec-f33e-25e9-1098">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="242e-3c3a-a8ec-1228">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="b59c-d6d4-3a71-6a65" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f841-6212-72a4-641d"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="441f-59b0-b18b-7cd0">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="6335-1a8a-2ef3-6c26" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="0327-80ff-8b55-1bc1">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="65dc-e45a-c4e7-7de7" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="fce9-bc73-6357-9074" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="352f-b145-f456-ee0c">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="8535-7bc3-51e5-eb91">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="738d-43d7-ca3b-781e">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="49ab-0eb3-be47-4834" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="86c1-f722-ac9b-4c21"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Frontline" id="e570-369a-2781-c2dc" hidden="false">
+          <description>This model increases its DODGE stat of this model by 1 if it is within 3&quot; of another friendly Foot Soldier or Knight model.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Huntsman" hidden="false" id="7659-fa10-3c32-2aeb">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="25"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="8b95-d332-4ce1-8c26" primary="true" name="4. SPECIALISTS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Huntsman" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="f1bd-b5cb-4bd5-356c">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">7&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">5+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Peasant, Slink, Specialist, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crossbow" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="2794-bcef-a779-05c9">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Dagger" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="e922-e18c-cd39-21b2">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="b747-07cb-ff7e-c52e" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Slink" id="4235-c9a2-440d-6890" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="9206-d400-8427-689b" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d64-ff67-e780-17f3"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="99f0-7d23-1571-dc75">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="bdec-7725-9c5d-99e9" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="f25b-044f-8bcb-045a" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="9bce-2ecf-1f57-3b41">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="9c78-45c8-eeae-d772">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="02d8-4770-ca76-ee69">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="31db-d3b1-f7fe-3fa7" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2543-c157-7663-8b3b"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="0a96-974f-7dfb-14a3">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="bcab-9ff7-3f12-b386" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="50cc-4806-2156-7f26">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="0bf5-0b66-8738-6efb" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="226e-551b-c1c2-3786" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="ed87-5364-02a6-6722">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="a0c4-319b-b2d3-8c8e">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="41e8-4eb6-c51e-88b2">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="70a0-37ba-c563-0732" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ed45-3e53-7cde-8903"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Lay in Wait" id="f34e-3e19-b9f1-7817" hidden="false">
+          <description>Once per turn, in this model&apos;s shooting phase if it is not in melee, you may lay a trap directly underneath this model. Any model other than the Huntsman that layed the trap that moves within or over 1&quot; of the center of the trap takes D3 damage and cannot move the rest of its activation. You may only have 1 trap active per Huntsman model in your army.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Holy Knight" hidden="false" id="89e2-189d-f29d-4145">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="60"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="4. SPECIALISTS" hidden="false" id="0b32-b918-4368-7656" targetId="0334-a6c5-1a87-f595" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Huntsman" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="186d-fad6-24ef-a4ca">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Knight, Resolute 4+, Specialist, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blessed Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="f318-58e0-52b4-7fd9">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2, Lance</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="f139-9e88-4f88-96b4" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Lance" id="2905-ea9c-e404-1fd5" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Resolute 4+" id="9704-eb12-7827-4a8f" hidden="false" type="rule" targetId="2057-6dbd-3f2f-6bc0"/>
+        <infoLink name="Fear 2" id="d787-a8c6-2e65-f5a5" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="5938-da25-f655-d13d" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5a2-bd63-6db0-79b8"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="a9b0-31a9-d6c3-c9f4">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="928f-2377-750f-0883" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="7aec-6dd1-4fbf-6014" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="934b-b3b9-621f-f829">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="9847-6e90-c77a-bb80">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="8cfb-f7a7-72b3-03c0">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="a27f-babd-3cd5-6c6f" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a34-11e4-6493-2552"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="3280-1c9d-3a9d-65f8">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="056b-c5bc-ffde-bf4b" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="95d8-1c7a-3a53-bfb3">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="186b-fc6d-f8c7-c4c0" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="e8fb-c668-6e94-da20" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="49f1-39ce-fee9-4a76">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="2a6b-2814-3aa8-9fb4">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="ac06-473b-099c-16eb">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="382a-a75c-eaab-a9e9" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="25b9-448f-7f2e-a85f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Blessed Resilience" id="9fb5-9267-120b-86bc" hidden="false">
+          <description>The first time this model would die, it does not and instead lives with 1 HEALTH. Once this model has been revived this model may not heal from any source.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Cavalier" hidden="false" id="b033-b399-eebb-d70a">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="4. SPECIALISTS" hidden="false" id="f0e2-a907-2053-62e0" targetId="0334-a6c5-1a87-f595" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Cavalier" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="b548-e0fc-d585-9d3b">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">12&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Knight, Resolute 4+, Dexterous 8+, Specialist, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Crossbow" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="b677-c680-6bc9-dfc3">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">24&quot;</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Lance" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="30c3-b412-2d38-ddf8">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="f2c9-d94f-6279-b910" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Dexterous 8+" id="4166-7374-990d-4dfd" hidden="false" type="rule" targetId="431a-5e2a-187d-c35b"/>
+        <infoLink name="Resolute 4+" id="e28a-bee5-249f-fc97" hidden="false" type="rule" targetId="2057-6dbd-3f2f-6bc0"/>
+        <infoLink name="Fear 1" id="2471-50cb-a159-7eb2" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="a1ce-a7e5-040a-4d6b" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a7f-27b0-1fdc-f6fc"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="6d46-4325-8da5-4a1c">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="cc0f-6375-a1b0-38c2" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="14ac-d863-fbe9-b1ac" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="387c-3c5e-0876-b966">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0741-11c5-ae9b-331b">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="3c87-0cd1-631b-788c">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5c48-c834-3fc1-4dd8" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f72-77cd-4fd5-17a2"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="8490-54d0-3127-3d25">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="2457-c3dd-15a9-2020" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="8654-c1e0-82c5-2390">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="3a7d-dca9-f8fb-8339" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="3eed-d167-fb81-5410" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="59bd-441a-8cc2-43ab">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="220c-0c98-6a60-1844">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="5f3c-1770-d201-21fa">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5d4d-290a-94aa-b13a" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd97-56a4-dfac-2cfc"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Charge Forth" id="0ed8-4180-4d9f-3cb5" hidden="false">
+          <description>If this model CHARGED this turn the Lance weapon equipped by this model increases its DAMAGE stat by 3 until end of its activation.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Priest" hidden="false" id="9894-2e24-3a91-126e">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="4. SPECIALISTS" hidden="false" id="8f84-37c5-3e01-91f6" targetId="0334-a6c5-1a87-f595" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Preist" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="17f2-0d89-9e87-7087">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 6+, Specialist, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Short Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="deb0-ab30-8655-e0d1">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="d2be-fa16-bdd5-68fd" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Resolute 6+" id="665f-d410-431a-3946" hidden="false" type="rule" targetId="2e45-02ce-37e8-5ecd"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="14df-52e1-35e6-f9b9" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7fd1-51fc-a72d-9d5f"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="ae20-29c5-ec81-c55d">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="79c2-62bd-75fe-d01f" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="b74a-a4ed-d803-9b83" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="a4e5-0399-7c46-5a50">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="05a1-effc-2c53-8ba8">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="e53f-e6b2-97e8-8bad">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1f85-49f1-cf6d-cc5f" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e1a7-d2a9-2eb4-35c5"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="dddd-202d-1b94-ccad">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="9cc2-7959-79d5-92eb" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="676e-2d40-2180-043b">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="b933-5a8d-95bf-2151" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="5121-f387-9b8e-0cc1" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="4e51-5d2a-40f1-bb4b">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="c093-4422-7bab-5838">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="53d7-1510-2bb2-fd6c">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1e97-7923-1621-78f9" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e513-d4e3-d0e2-e26a"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Healing Word" id="0950-132a-534b-99bc" hidden="false">
+          <description>Once per turn, at the end of activation phase for this model, you may heal one model within 3&quot; of this model  D3 Health.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Ballista" hidden="false" id="e327-09c1-ea0c-96e0">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="19ce-5b4b-a7ec-b47d" id="3c4a-863b-b0ec-fc20" primary="true" name="5. FORTIFICATIONS"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ballista" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="ee56-1925-e14c-6146">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">4</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Short Sword (x3)" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="4870-49d5-7854-e72e">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ballista" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="03d7-bf93-449e-a007">
+          <characteristics>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-5</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="f1d4-4f3c-0934-8021" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Fortification - Close" id="66de-5f47-b0a2-079e" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
+        <infoLink name="Multiple Weapons" id="bba2-3138-90aa-3fde" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+        <infoLink name="Fear 2" id="9e6f-f0df-9101-1261" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="eb33-0aee-9364-a2c5" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7eec-9094-4d6d-6736"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="a130-6d2c-6f5a-375b">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="ec4e-e950-d01e-d8f5" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="c6b3-2e93-fda2-2138" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="f7e4-e67e-133d-c1dc">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="6d4f-cbf7-743d-cc6b">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="abfd-57c5-971e-8f20">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="9f4f-2fad-06f4-60bd" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7066-3521-aa64-556f"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="a96d-f83a-1354-34ce">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="579e-8bd1-c603-c984" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="f72c-3281-ec07-b12c">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="0474-7fe8-2703-4d11" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="c4c8-d153-1248-fea0" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="0591-9156-f233-d12d">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="af47-f63d-e502-ff97">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="4d63-f952-d431-a78d">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="d9a9-d850-d0d4-412f" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d25-360e-ad4c-ef4a"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Blessed Grove" hidden="false" id="3404-b260-cdf4-2362">
+      <costs>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="5. FORTIFICATIONS" hidden="false" id="3da7-4e30-8510-f79d" targetId="19ce-5b4b-a7ec-b47d" primary="true"/>
+      </categoryLinks>
+      <profiles>
+        <profile name="Ballista" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="3e69-aa08-8d91-e4e1">
+          <characteristics>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">-</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification, DOTFP</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blessed Rewards" id="7d97-2c54-539f-7048" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
+        <infoLink name="Fortification - Far" id="9319-4935-1aab-79c0" hidden="false" type="rule" targetId="5d78-c120-6bab-bafd"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blessing Selection" id="8b99-af1a-0d5a-73f2" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ce-aa33-cd1b-6253"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Careen" hidden="false" id="f953-bed0-80c6-e188">
+              <infoLinks>
+                <infoLink name="Blessing of Careen" id="8379-265a-a05c-5304" hidden="false" type="profile" targetId="feac-ed0b-7692-c6c9"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="90a5-781d-f629-972d" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="9cc2-8370-dab1-defb">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="d917-1b36-f0f1-eeed">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="a422-40da-198a-2be4">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="c0f2-378a-51fa-ec8a" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="746f-dad6-f469-ee72"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Sarielle" hidden="false" id="e435-5de4-ace1-46ee">
+              <infoLinks>
+                <infoLink name="Blessing of Sarielle" id="5526-b30e-05e3-ff00" hidden="false" type="profile" targetId="7794-fcaa-031b-094e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Blessing of Xeritch" hidden="false" id="63a7-be7b-7fd1-8122">
+              <infoLinks>
+                <infoLink name="Blessing of Xeritch" id="4b53-956a-999b-9ca0" hidden="false" type="profile" targetId="d8e0-27f0-3aea-589c"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon Upgrade Selection" id="4ea3-e5e0-cbf5-49eb" hidden="false">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Ranged Weapon Upgrade" hidden="false" id="8571-6cb8-f712-be52">
+                      <profiles>
+                        <profile name="Ranged Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="852e-d1a6-ae3d-3c3e">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Ranged weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="6f0c-d5b6-31f0-b04f">
+                      <profiles>
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="43bf-4231-1ce9-38fa" page="">
+                          <characteristics>
+                            <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbe3-d9e0-bf16-4f81"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Aura of Calm" id="ef1e-3af8-da1f-8c78" hidden="false">
+          <description>Friendly models within 6&quot; of this model have a +1 to RESOLVE checks. Friendly models within 3&quot; of this model double the bonus granted to them by their chosen blessing.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Blessing of Sarielle" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="7794-fcaa-031b-094e">
+      <characteristics>
+        <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">This model may reroll 1 single die per turn.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blessing of Careen" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="feac-ed0b-7692-c6c9">
+      <characteristics>
+        <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">1 weapon equipped by this model has a +1 modifier to the DAMAGE stat.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blessing of Xeritch" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="d8e0-27f0-3aea-589c">
+      <characteristics>
+        <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">1 weapon equipped by this model has a +1 modifier to the HIT CHANCE stat.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
