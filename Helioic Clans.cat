@@ -501,7 +501,7 @@
         <categoryLink name="5. FORTIFICATIONS" hidden="false" id="e210-01d2-f047-e723" targetId="19ce-5b4b-a7ec-b47d" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="65"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
       </costs>
       <profiles>
         <profile name="Trebuchet" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a58f-2efc-f6ae-4e07">
@@ -519,10 +519,10 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-5</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Mortar, Fear 2, Explosive 1</characteristic>
           </characteristics>
         </profile>
