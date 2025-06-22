@@ -197,60 +197,38 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41bc-f23a-4f9e-ebb0"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Commander Stature" id="d748-7d9e-adc1-ef7d" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="c12c-dcff-6b23-8785">
-              <profiles>
-                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="cf29-25ac-6966-d502">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="aa3d-2958-4a75-16e8">
-              <profiles>
-                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0201-19af-1a5b-64e3">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b26a-2591-a2f6-df7a"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Commander Abilities" id="33a4-0307-4601-3823" hidden="false" sortIndex="2">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Ambush Squad" hidden="false" id="8ade-5d69-6195-4fc5">
+            <selectionEntry type="upgrade" import="true" name="Holy Aura" hidden="false" id="8ade-5d69-6195-4fc5">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5730-f2bc-a4f0-3e33"/>
               </constraints>
               <rules>
-                <rule name="Ambush Squad" id="043c-d492-91a3-5a21" hidden="false">
-                  <description>If a friendly model is within 18&quot; of your COMMANDER and didn&apos;t move this turn that model they gain +1 to HIT CHANCE rolls.</description>
+                <rule name="Holy Aura" id="043c-d492-91a3-5a21" hidden="false">
+                  <description>Friendly KNIGHT models within 6&quot; of your COMMANDER may ignore all modifiers to their melee profile, but do not benefit from BLESSED REWARDS when doing so.</description>
                 </rule>
               </rules>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sand Screen" hidden="false" id="cac9-ade4-529d-fa3e">
+            <selectionEntry type="upgrade" import="true" name="Empowerment" hidden="false" id="cac9-ade4-529d-fa3e">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1815-4465-3e08-d074"/>
               </constraints>
               <rules>
-                <rule name="Sand Screen" id="c16f-e1ac-c0a4-f261" hidden="false">
-                  <description>When you activate your COMMANDER, before any other action, you may choose to swap the locations of 2 friendly infantry models within 18&quot; of your COMMANDER.</description>
+                <rule name="Empowerment" id="c16f-e1ac-c0a4-f261" hidden="false">
+                  <description>All friendly models within 6&quot; of your COMMANDER gain the DEXTROUS 10+ keyword.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink name="Dexterous 10+" id="5e49-11d3-4119-b4a0" hidden="false" type="rule" targetId="3c5a-94e0-8b98-92b8"/>
+              </infoLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Eye of the Storm" hidden="false" id="51a0-006f-180a-a5bd">
+            <selectionEntry type="upgrade" import="true" name="Glancing Blow" hidden="false" id="51a0-006f-180a-a5bd">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b46c-a385-315b-0745"/>
               </constraints>
               <rules>
-                <rule name="Eye of the Storm" id="db36-fe15-889d-40ef" hidden="false">
-                  <description>The area within 3&quot; of the center of your COMMANDER model counts as your area of control for the purpose of AMBUSH TACTICS. Models may not be set up in this area during army deployment and supplies may not be scored in this area.</description>
+                <rule name="Glancing Blow" id="db36-fe15-889d-40ef" hidden="false">
+                  <description>If a KNIGHT model within 9&quot; of the COMMANDER would take damage from a ranged attack, you may instead redirect the damage to a PEASANT model within 3&quot; of that KNIGHT model.</description>
                 </rule>
               </rules>
             </selectionEntry>
@@ -289,7 +267,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="6bd3-8935-d910-9c2c">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="675a-8bf9-63c6-ab24" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="675a-8bf9-63c6-ab24">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -333,7 +311,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="8e8b-7650-88fd-ecd6">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dfb9-e213-4a2e-9e5d" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dfb9-e213-4a2e-9e5d">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -363,7 +341,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Arch Magus" hidden="false" id="4bdb-d0e6-6b59-90eb">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="60"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="65"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="c711-21ec-ff7b-5c9b" id="2071-4d9f-bb13-e6a0" primary="true" name="2. LEADER"/>
@@ -382,7 +360,7 @@
         </profile>
         <profile name="Elemental Strike" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="78df-7486-145e-30df">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
             <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
@@ -394,8 +372,8 @@
         <profile name="Short Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="977d-accb-e1e6-388f">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -434,7 +412,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="83d6-ab9c-fd46-4606">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0acd-dfb2-ed8c-7e27" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="0acd-dfb2-ed8c-7e27">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -478,7 +456,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="44be-59c4-4095-4440">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5b91-47fb-22af-fd77" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5b91-47fb-22af-fd77">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -510,7 +488,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chosen One" hidden="false" id="0a49-4c76-a659-2e42">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="90"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="110"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="c711-21ec-ff7b-5c9b" id="f931-7cee-522e-af59" primary="true" name="2. LEADER"/>
@@ -520,29 +498,30 @@
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
-            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">8+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">4</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
-            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Knight, Resolute 3+, Dexterous 9+, DOTFP</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Knight, Resolute 5+, DOTFP</characteristic>
           </characteristics>
         </profile>
         <profile name="Holy Zweihander" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="6b0e-2c82-45e8-2657">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-6</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Fear 3, Lance</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 3, Lance, Sweep</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Blessed Rewards" id="7c22-c316-ada7-6b08" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
-        <infoLink name="Fear 1" id="9c44-cb5d-f8aa-3720" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
-        <infoLink name="Explosive 2" id="b888-1429-2230-eb5e" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
+        <infoLink name="Lance" id="9c44-cb5d-f8aa-3720" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Resolute 5+" id="47db-c8aa-e477-57e1" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
+        <infoLink name="Sweep" id="8f3e-a5db-4f2e-f486" hidden="false" type="rule" targetId="e43e-2ba5-31b4-b850"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Blessing Selection" id="7879-4b54-a292-c67f" hidden="false">
@@ -568,7 +547,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="5dd2-1125-3cf6-02a2">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dba0-6a4d-53bc-2d38" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dba0-6a4d-53bc-2d38">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -612,7 +591,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="df36-08be-dfca-8392">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="17f9-a113-1323-ade7" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="17f9-a113-1323-ade7">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -638,19 +617,19 @@
       </selectionEntryGroups>
       <rules>
         <rule name="Resolute Figurehead" id="c7a4-efc2-4100-7871" hidden="false">
-          <description>This model may fight back a total of 5 times in a turn instead of the normal 2.</description>
+          <description>This model may fight back a total of 3 times in a turn instead of the normal 2.</description>
         </rule>
       </rules>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Knight" hidden="false" id="8457-e4a0-8ef4-e71f">
+    <selectionEntry type="model" import="true" name="Templar" hidden="false" id="8457-e4a0-8ef4-e71f">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="fafa-f4e5-0d0a-3504" id="1af0-fb4a-1064-8406" primary="true" name="3. BATTLELINE"/>
       </categoryLinks>
       <profiles>
-        <profile name="Knight" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="1bd4-4df1-013c-da0f">
+        <profile name="Templar" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="1bd4-4df1-013c-da0f">
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">4+</characteristic>
@@ -669,7 +648,7 @@
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Lance</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Lance, Sweep</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -678,6 +657,7 @@
         <infoLink name="Fear 1" id="bade-9186-2653-744c" hidden="false" type="rule" targetId="6780-98cb-0bdb-f6e8"/>
         <infoLink name="Resolute 6+" id="7b00-4b41-e4ab-0f02" hidden="false" type="rule" targetId="2e45-02ce-37e8-5ecd"/>
         <infoLink name="Lance" id="129b-0ef0-d5ee-5392" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
+        <infoLink name="Sweep" id="68ce-6edb-caff-0b3e" hidden="false" type="rule" targetId="e43e-2ba5-31b4-b850"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Blessing Selection" id="cea2-85de-e855-2616" hidden="false">
@@ -703,7 +683,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="d09a-0f82-20c0-04c8">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="7026-7337-f3be-3508" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="7026-7337-f3be-3508">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -747,7 +727,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="329e-ad63-794c-8a70">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5e77-7bbc-2464-23af" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5e77-7bbc-2464-23af">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -788,7 +768,7 @@
         <profile name="Bowman" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a337-318d-73e4-97a2">
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
-            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">5+</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">7+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
@@ -800,7 +780,7 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -811,7 +791,7 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
@@ -846,7 +826,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="43d4-89a5-9033-70a1">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="77cc-80cc-4698-f7d1" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="77cc-80cc-4698-f7d1">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -890,7 +870,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="44ff-013d-62c1-6765">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="98ba-9b0f-3b89-8df4" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="98ba-9b0f-3b89-8df4">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -922,7 +902,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Foot Soldier" hidden="false" id="0285-b227-b334-be43">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="15"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="20"/>
       </costs>
       <categoryLinks>
         <categoryLink name="3. BATTLELINE" hidden="false" id="08df-faeb-b5c2-1825" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
@@ -931,7 +911,7 @@
         <profile name="Foot Soldier" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="9fcb-7a96-6919-4566">
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
-            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">5+</characteristic>
+            <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">6+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
@@ -942,8 +922,8 @@
         <profile name="Short Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="0687-141f-ef93-8a57">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -978,7 +958,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="242e-3c3a-a8ec-1228">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="b59c-d6d4-3a71-6a65" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="b59c-d6d4-3a71-6a65">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1022,7 +1002,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="738d-43d7-ca3b-781e">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="49ab-0eb3-be47-4834" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="49ab-0eb3-be47-4834">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1054,7 +1034,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Huntsman" hidden="false" id="7659-fa10-3c32-2aeb">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="25"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="0334-a6c5-1a87-f595" id="8b95-d332-4ce1-8c26" primary="true" name="4. SPECIALISTS"/>
@@ -1068,14 +1048,14 @@
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
-            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Peasant, Slink, Specialist, DOTFP</characteristic>
+            <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Peasant, Specialist, DOTFP</characteristic>
           </characteristics>
         </profile>
         <profile name="Crossbow" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="2794-bcef-a779-05c9">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -1096,7 +1076,6 @@
       </profiles>
       <infoLinks>
         <infoLink name="Blessed Rewards" id="b747-07cb-ff7e-c52e" hidden="false" type="rule" targetId="2b29-584c-134d-4ef9"/>
-        <infoLink name="Slink" id="4235-c9a2-440d-6890" hidden="false" type="rule" targetId="c212-2b0b-6d24-a33a"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Blessing Selection" id="9206-d400-8427-689b" hidden="false">
@@ -1122,7 +1101,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="02d8-4770-ca76-ee69">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="31db-d3b1-f7fe-3fa7" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="31db-d3b1-f7fe-3fa7">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1166,7 +1145,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="41e8-4eb6-c51e-88b2">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="70a0-37ba-c563-0732" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="70a0-37ba-c563-0732">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1198,18 +1177,18 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Holy Knight" hidden="false" id="89e2-189d-f29d-4145">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="60"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
       </costs>
       <categoryLinks>
         <categoryLink name="4. SPECIALISTS" hidden="false" id="0b32-b918-4368-7656" targetId="0334-a6c5-1a87-f595" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Huntsman" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="186d-fad6-24ef-a4ca">
+        <profile name="Holy Knight" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="186d-fad6-24ef-a4ca">
           <characteristics>
-            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">5&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
-            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">8+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Knight, Resolute 4+, Specialist, DOTFP</characteristic>
@@ -1219,11 +1198,11 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2, Lance</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2, Lance, Sweep</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1232,6 +1211,7 @@
         <infoLink name="Lance" id="2905-ea9c-e404-1fd5" hidden="false" type="rule" targetId="a8e5-15ac-f002-e48f"/>
         <infoLink name="Resolute 4+" id="9704-eb12-7827-4a8f" hidden="false" type="rule" targetId="2057-6dbd-3f2f-6bc0"/>
         <infoLink name="Fear 2" id="d787-a8c6-2e65-f5a5" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
+        <infoLink name="Sweep" id="7002-dbf5-3aa4-fabf" hidden="false" type="rule" targetId="e43e-2ba5-31b4-b850"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Blessing Selection" id="5938-da25-f655-d13d" hidden="false">
@@ -1257,7 +1237,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="8cfb-f7a7-72b3-03c0">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="a27f-babd-3cd5-6c6f" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="a27f-babd-3cd5-6c6f">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1301,7 +1281,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="ac06-473b-099c-16eb">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="382a-a75c-eaab-a9e9" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="382a-a75c-eaab-a9e9">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1364,11 +1344,11 @@
         <profile name="Lance" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="30c3-b412-2d38-ddf8">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
             <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
           </characteristics>
         </profile>
@@ -1403,7 +1383,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="3c87-0cd1-631b-788c">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5c48-c834-3fc1-4dd8" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5c48-c834-3fc1-4dd8">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1447,7 +1427,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="5f3c-1770-d201-21fa">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5d4d-290a-94aa-b13a" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="5d4d-290a-94aa-b13a">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1473,13 +1453,13 @@
       </selectionEntryGroups>
       <rules>
         <rule name="Charge Forth" id="0ed8-4180-4d9f-3cb5" hidden="false">
-          <description>If this model CHARGED this turn the Lance weapon equipped by this model increases its DAMAGE stat by 3 until end of its activation.</description>
+          <description>If this model CHARGED this turn the Lance weapon equipped by this model increases its DAMAGE stat by 2 until end of its activation.</description>
         </rule>
       </rules>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Priest" hidden="false" id="9894-2e24-3a91-126e">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="45"/>
       </costs>
       <categoryLinks>
         <categoryLink name="4. SPECIALISTS" hidden="false" id="8f84-37c5-3e01-91f6" targetId="0334-a6c5-1a87-f595" primary="true"/>
@@ -1499,8 +1479,8 @@
         <profile name="Short Sword" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="deb0-ab30-8655-e0d1">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -1536,7 +1516,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="e53f-e6b2-97e8-8bad">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1f85-49f1-cf6d-cc5f" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1f85-49f1-cf6d-cc5f">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1580,7 +1560,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="53d7-1510-2bb2-fd6c">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1e97-7923-1621-78f9" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1e97-7923-1621-78f9">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1632,9 +1612,9 @@
         <profile name="Short Sword (x3)" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="4870-49d5-7854-e72e">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">-</characteristic>
@@ -1642,11 +1622,11 @@
         </profile>
         <profile name="Ballista" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="03d7-bf93-449e-a007">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-5</characteristic>
-            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">3</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
           </characteristics>
@@ -1682,7 +1662,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="abfd-57c5-971e-8f20">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="9f4f-2fad-06f4-60bd" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="9f4f-2fad-06f4-60bd">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1726,7 +1706,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="4d63-f952-d431-a78d">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="d9a9-d850-d0d4-412f" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="d9a9-d850-d0d4-412f">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1750,16 +1730,19 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c13c-7f3e-f61b-0aed" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Blessed Grove" hidden="false" id="3404-b260-cdf4-2362">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
       </costs>
       <categoryLinks>
         <categoryLink name="5. FORTIFICATIONS" hidden="false" id="3da7-4e30-8510-f79d" targetId="19ce-5b4b-a7ec-b47d" primary="true"/>
       </categoryLinks>
       <profiles>
-        <profile name="Ballista" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="3e69-aa08-8d91-e4e1">
+        <profile name="Blessed Grove" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="3e69-aa08-8d91-e4e1">
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">-</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">-</characteristic>
@@ -1799,7 +1782,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="a422-40da-198a-2be4">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="c0f2-378a-51fa-ec8a" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="c0f2-378a-51fa-ec8a">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1843,7 +1826,7 @@
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Melee Weapon Upgrade" hidden="false" id="6f0c-d5b6-31f0-b04f">
                       <profiles>
-                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="43bf-4231-1ce9-38fa" page="">
+                        <profile name="Melee Weapon Upgrade" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="43bf-4231-1ce9-38fa">
                           <characteristics>
                             <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">Melee weapon is upgraded with the blessing.</characteristic>
                           </characteristics>
@@ -1868,10 +1851,14 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <rules>
-        <rule name="Aura of Calm" id="ef1e-3af8-da1f-8c78" hidden="false">
-          <description>Friendly models within 6&quot; of this model have a +1 to RESOLVE checks. Friendly models within 3&quot; of this model double the bonus granted to them by their chosen blessing.</description>
+        <rule name="Path of the Saints" id="ef1e-3af8-da1f-8c78" hidden="false">
+          <description>All enemy models within 3&quot; of this model suffer a -2 to their MOVEMENT characteristic.
+</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1a89-4b1f-5802-9b49" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedProfiles>

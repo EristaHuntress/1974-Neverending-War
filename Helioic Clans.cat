@@ -16,7 +16,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">4</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -53,7 +53,7 @@
       </infoLinks>
       <rules>
         <rule name="Royal Decree" id="3c63-a9f8-d9b7-fbd6" hidden="false">
-          <description>All friendly SLAVE models within 6&quot; of this model have their ATTACKS stat of their weapons increased by 1 and gain a +1 modifier to their HIT CHANCE stat.</description>
+          <description>All friendly SLAVE models within 6&quot; of this model have their ATTACKS stat of their weapons increased by 1.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -72,7 +72,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">3</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -124,7 +124,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">3</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Storm 2, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -169,7 +169,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Slave" hidden="false" id="a1ce-29aa-4dad-198f">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="5"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="10"/>
       </costs>
       <categoryLinks>
         <categoryLink name="3. BATTLELINE" hidden="false" id="0170-ab02-df2c-a203" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
@@ -182,7 +182,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">1</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">0</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -190,7 +190,7 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">6+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
@@ -212,7 +212,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Slinger" hidden="false" id="11ec-2e44-401c-cc26">
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="5"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="10"/>
       </costs>
       <categoryLinks>
         <categoryLink name="3. BATTLELINE" hidden="false" id="6bcf-1da0-3d5c-7691" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
@@ -225,7 +225,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">1</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">0</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -244,7 +244,7 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">6+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
@@ -280,7 +280,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Slave, Dexterous 8+, Specialist, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -347,7 +347,7 @@
           <description>This model does not trigger resolve checks on friendly model when this model dies, but cannot allow friendly models to regain resolve.</description>
         </rule>
         <rule name="Dead Switch" id="e277-5ffb-ef5d-6d30" hidden="false">
-          <description>The owner of this model may choose to kill this model at any time. When this model dies through any means all models within 3&quot; of this model take D6+1 damage and suffer a -4 to RESOLVE if a RESOLVE check is made due to this model killing another model.</description>
+          <description>The owner of this model may choose to kill this model at any time. When this model dies through any means all models within 3&quot; of this model take D3+1 damage and suffer a -2 to RESOLVE if a RESOLVE check is made due to this model killing another model.</description>
         </rule>
       </rules>
       <constraints>
@@ -372,7 +372,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">3</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">4</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Royal, Storm 2, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -401,7 +401,7 @@
       </profiles>
       <rules>
         <rule name="Trample" id="e206-d26f-8b8a-8e1e" hidden="false">
-          <description>This model may move over infantry models when moving. If it does so this model takes 1 damage and the model that was moved over takes D3 damage.</description>
+          <description>This model may move over infantry models when moving. If it does so this model takes 1 damage and the model that was moved over takes 1 damage.</description>
         </rule>
       </rules>
       <constraints>
@@ -426,7 +426,7 @@
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">3</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
-            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
+            <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">3</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Royal, Slink, Specialist, Helioic</characteristic>
           </characteristics>
         </profile>
@@ -488,20 +488,23 @@
       </profiles>
       <rules>
         <rule name="Slave Masses" id="dd57-675d-e053-b736" hidden="false">
-          <description>Whilst this model is still on the battlefield, when this model activates, generate REINFORCEMENT TOKENS equal to the current turn number multiplied by 5.</description>
+          <description>Whilst this model is still on the battlefield, when this model activates, generate REINFORCEMENT TOKENS equal to the current turn number multiplied by 10. Slave models that are replaced within 6&quot; of this model gain 4&quot; to this model on its activation.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Fortification - Close" id="73b1-e37c-7d72-c429" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
         <infoLink name="Unending Hordes" id="7727-c26c-c65a-8a2a" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4651-b1f4-f94b-0ddc" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Trebuchet" hidden="false" id="0bb7-7aa2-0f80-93fb">
       <categoryLinks>
         <categoryLink name="5. FORTIFICATIONS" hidden="false" id="e210-01d2-f047-e723" targetId="19ce-5b4b-a7ec-b47d" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="60"/>
       </costs>
       <profiles>
         <profile name="Trebuchet" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="a58f-2efc-f6ae-4e07">
@@ -510,18 +513,18 @@
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
-            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification - Close, Helioic</characteristic>
           </characteristics>
         </profile>
         <profile name="Trebuchet" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="ec1c-d83e-b322-eff9">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">30&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
             <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
-            <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Caliber" typeId="1657-d240-f189-3604">3</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Mortar, Fear 2, Explosive 1</characteristic>
           </characteristics>
@@ -545,6 +548,9 @@
         <infoLink name="Mortar" id="521f-6643-eb4d-bb21" hidden="false" type="rule" targetId="e402-d816-d773-fd47"/>
         <infoLink name="Unending Hordes" id="3ab0-d173-4cbf-e1aa" hidden="false" type="rule" targetId="54c2-19b8-4d4b-f4c2"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0dd1-2d43-2185-ea74" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Commander" hidden="false" id="8940-078f-1232-b735" collective="false">
       <constraints>
@@ -556,6 +562,7 @@
       </costs>
       <categoryLinks>
         <categoryLink name="1. COMMANDER" hidden="false" id="944f-f8dc-5233-de22" targetId="d8d3-be4a-a711-026c" primary="true"/>
+        <categoryLink targetId="c711-21ec-ff7b-5c9b" id="c095-10e0-6336-de73" primary="false" name="2. LEADER"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Profiles" id="4439-7095-d251-d65b" hidden="false" sortIndex="1">
@@ -734,31 +741,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="624e-3a73-973f-be66"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Commander Stature" id="cb38-7c36-8be2-135c" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="da24-78bf-1427-b572">
-              <profiles>
-                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="e23c-c054-9953-8d78">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="fd9b-7f67-a502-dec8">
-              <profiles>
-                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="ab16-137e-2ed8-17b6">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3d6-aa02-e05d-08a8"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Commander Abilities" id="2674-6a08-899f-0acf" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Crack the Whip" hidden="false" id="29a3-c7d4-2648-e123">
@@ -813,7 +795,7 @@
   </selectionEntries>
   <sharedRules>
     <rule name="Unending Hordes" id="54c2-19b8-4d4b-f4c2" hidden="false">
-      <description>At the start of the battle gain 25 REINFORCEMENT TOKENS. When a friendly model with the SLAVE keyword dies within 6&quot; of a friendly model with the ROYAL keyword, gain REINFORCEMENT TOKENS equal to the points the model was worth. At the beginning of any turn, before any model has been activated, you can choose to revive any dead friendly models with the SLAVE keyword, but you must spent REINFORCEMENT TOKENS equal to the points that model is worth in order to do so.</description>
+      <description>At the start of the battle gain 30 REINFORCEMENT TOKENS. When a friendly model with the SLAVE keyword dies within 6&quot; of a friendly model with the ROYAL keyword, gain REINFORCEMENT TOKENS equal to the points the model was worth. At the beginning of any turn, before any model has been activated, you can choose to revive any dead friendly models with the SLAVE keyword, but you must spent REINFORCEMENT TOKENS equal to the points that model is worth in order to do so.</description>
     </rule>
   </sharedRules>
 </catalogue>

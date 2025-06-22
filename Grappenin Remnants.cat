@@ -4,9 +4,9 @@
     <rule name="Commander&apos;s Orders" id="150e-1af9-0552-781f" hidden="false">
       <description>When a friendly model with the COMMANDER or LEADER keyword is activated you may choose one of the following effects:
 - Push up: All friendly models within 6&quot; of this model may move additional 2&quot; when activated
-- Aim: All friendly models within 6&quot; of this model gain a +1 modifier to the HIT CHANCE stat of their ranged weapons.
-- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION of the ranged weapons by 1
-- Affix Bayonets: All friendly models with 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation. 
+- Fire: All friendly models within 6&quot; of this model increase the DODGE REDUCTION stat of the ranged weapons by 1
+- Affix Bayonets: All friendly models within 6&quot; of this model gain the [Storm 4] keyword until the end of their next activation. 
+- Hunker Down: All friendly models within 6&quot; improve their DODGE stat against ranged weapons by 1.
 Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</description>
     </rule>
   </sharedRules>
@@ -199,31 +199,6 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03d0-188c-0bea-37c7"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Commander Stature" id="e723-e549-90d1-eb2a" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="096d-9d4e-0290-5fdc">
-              <profiles>
-                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="c97b-1243-38e0-cafa">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="f2d5-54e8-d55b-f817">
-              <profiles>
-                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="dc15-f871-f556-a3a0">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="71b2-484a-7022-1e45"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Commander Abilities" id="bb99-8460-01f7-8d8a" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Chain Of Command" hidden="false" id="7266-06e2-863b-2114">
@@ -324,7 +299,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Commander&apos;s Orders" id="57ce-db2c-ab0c-62a3" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="35"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Lieutenant" hidden="false" id="b61f-0b13-b9fd-102d">
@@ -347,10 +322,10 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
           </characteristics>
         </profile>
@@ -380,7 +355,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Commander&apos;s Orders" id="fb1a-3c4a-da47-d375" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="35"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="40"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rifleman" hidden="false" id="935a-7631-912c-2427">
@@ -401,9 +376,9 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         </profile>
         <profile name="RAF Rifle" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="9fc0-f001-5de2-4d10">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -414,7 +389,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
@@ -469,9 +444,9 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <profile name="RAF Trench Mace" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="14e6-6672-0932-3b2a">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Lance</characteristic>
@@ -516,7 +491,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">5</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
@@ -527,7 +502,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
@@ -570,7 +545,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         </profile>
         <profile name="RAF 80MM Cannon" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="1a6b-d522-5f18-01b9">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">24&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
             <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
@@ -592,7 +567,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         </profile>
         <profile name="Heavy Auto-Cannons" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="6f26-a651-9b16-3961">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">18&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
             <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
@@ -614,7 +589,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Versatile" id="e5b7-342a-38d3-f03a" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
         <infoLink name="Explosive 2" id="0ad1-3d83-1363-e5b6" hidden="false" type="rule" targetId="a914-013b-bf4b-ca61"/>
         <infoLink name="Rapid 1" id="ff88-41db-49b9-3eac" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
-        <infoLink name="Multiple Guns" id="943e-2627-b956-ad2f" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+        <infoLink name="Multiple Weapons" id="943e-2627-b956-ad2f" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
         <infoLink name="Commander&apos;s Orders" id="da16-15d7-2018-a4ed" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
@@ -631,8 +606,8 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
-            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">5+</characteristic>
-            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">7+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 6+, Slink, Specialist, Grappenin</characteristic>
           </characteristics>
@@ -641,19 +616,19 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">36&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">1</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Precise, Cumbersome</characteristic>
           </characteristics>
         </profile>
         <profile name="RAF Trench Mace" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="a1e1-241d-03f7-d615">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">2</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
@@ -675,7 +650,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Commander&apos;s Orders" id="d8bb-22d6-e0b2-c3e2" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Incinerator" hidden="false" id="4871-5197-aba2-9789">
@@ -697,8 +672,8 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <profile name="RAF Flame Thrower" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="d8ce-632c-05c4-9fb4">
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">12&quot;</characteristic>
-            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">12</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">8</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
@@ -709,8 +684,8 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">4+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
@@ -729,7 +704,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Commander&apos;s Orders" id="b7a9-198f-f025-77ff" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="45"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="50"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Chemist" hidden="false" id="759e-90e9-7d03-60ab">
@@ -739,7 +714,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
       <profiles>
         <profile name="Chemist" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="58ea-c493-db7b-c28a">
           <characteristics>
-            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">9&quot;</characteristic>
+            <characteristic name="Move" typeId="2461-dd54-666a-0e1f">6&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
@@ -755,7 +730,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
             <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Spread 2, Versatile, Close Quarters 2</characteristic>
           </characteristics>
         </profile>
@@ -773,7 +748,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
       </profiles>
       <rules>
         <rule name="Gas Grenade" id="7b39-2ed3-c264-a2ea" hidden="false">
-          <description>Once per battle per Chemist model, during the shooting phase of this model, you may Designate a circle with a 6&quot; diameter wholly within 12&quot; of this model. All models that enter the circle take D3+1 damage and must make a RESOLVE check with a -2 modifier. This effect ends at the end of the turn.</description>
+          <description>Once per battle per Chemist model, during the shooting phase of this model, you may Designate a circle with a 3&quot; diameter wholly within 12&quot; of this model. All models that enter the circle take D3+1 damage and must make a RESOLVE check with a -2 modifier. This effect ends at the end of the turn.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -800,19 +775,19 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">2+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
-            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification, Grappenin</characteristic>
           </characteristics>
         </profile>
         <profile name="Mortar Battery" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="3198-1ab7-75e5-4477">
           <characteristics>
-            <characteristic name="Range" typeId="20d0-057c-e834-f456">48&quot;</characteristic>
+            <characteristic name="Range" typeId="20d0-057c-e834-f456">30&quot;</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">5+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-2</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">4</characteristic>
-            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">4</characteristic>
+            <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Mortar, Fear 3, Explosive 2</characteristic>
           </characteristics>
         </profile>
@@ -830,7 +805,7 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
       </profiles>
       <rules>
         <rule name="Walking Barrage" id="6928-4034-2647-40e4" hidden="false">
-          <description>Once per battle, during this models activation, you may double the amount of ATTACKS this model&apos;s Mortar Battery weapon has, but for the rest of the activation this model suffers a -1 penalty to HIT CHANCE rolls.</description>
+          <description>Once per battle, during this models activation, you may double the amount of ATTACKS this model&apos;s Mortar Battery weapon has, but for the rest of the activation this model this model cannot fight in melee.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -841,8 +816,11 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Commander&apos;s Orders" id="03fc-313e-ebaa-d9f6" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="65"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="75"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2c7e-82be-c125-76e3" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Machine Gun Nest" hidden="false" id="94c8-8232-adf8-4b2f">
       <categoryLinks>
@@ -892,12 +870,15 @@ Models can only benefit from 1 of the COMMANDER&apos;S ORDERS at a time.</descri
         <infoLink name="Fear 2" id="1e5a-22dc-0f11-dfdf" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
         <infoLink name="Rapid 1" id="ebc8-66a6-c342-1500" hidden="false" type="rule" targetId="66df-d4ab-96a7-982d"/>
         <infoLink name="Fortification - Close" id="7de8-46d3-9f41-9702" hidden="false" type="rule" targetId="1400-2cd1-c401-bdd4"/>
-        <infoLink name="Multiple Guns" id="9b4b-63fe-be8f-e27b" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
+        <infoLink name="Multiple Weapons" id="9b4b-63fe-be8f-e27b" hidden="false" type="rule" targetId="7ec1-2c5f-6162-a344"/>
         <infoLink name="Commander&apos;s Orders" id="1977-2c34-aa01-08ed" hidden="false" type="rule" targetId="150e-1af9-0552-781f"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dc48-f43d-88f6-2d48" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
 </catalogue>

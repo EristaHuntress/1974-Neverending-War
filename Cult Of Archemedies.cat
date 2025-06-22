@@ -11,6 +11,7 @@
       </costs>
       <categoryLinks>
         <categoryLink name="1. COMMANDER" hidden="false" id="7114-edff-2af6-adb4" targetId="d8d3-be4a-a711-026c" primary="true"/>
+        <categoryLink targetId="c711-21ec-ff7b-5c9b" id="f8ea-e116-e0d3-61fb" primary="false" name="2. LEADER"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Profiles" id="7df5-3024-4ff3-3675" hidden="false" sortIndex="1">
@@ -189,31 +190,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b32-24de-3343-4250"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Commander Stature" id="b5fd-7e27-dd8e-0ff6" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="a05b-6032-d152-3f2e">
-              <profiles>
-                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="579f-6480-046d-73be">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="fd71-147e-17fc-78e3">
-              <profiles>
-                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="1cbc-a1f4-deca-750a">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6886-f15c-fb17-5c78"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Commander Abilities" id="bd0c-0922-5271-e3a0" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Unholy Speed" hidden="false" id="bec1-ac6d-765e-5d03">
@@ -290,7 +266,7 @@
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-1</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 1, Sweep</characteristic>
           </characteristics>
         </profile>
         <profile name="Hellish Polearm" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="df3a-40d0-0771-c9c7">
@@ -311,6 +287,7 @@
         <infoLink name="Dexterous 9+" id="fde0-4965-ccfd-c2da" hidden="false" type="rule" targetId="df9e-32e3-ec76-c10d"/>
         <infoLink name="Resolute 5+" id="e6fe-c51d-eea8-675d" hidden="false" type="rule" targetId="0c52-ec56-1e06-e3cf"/>
         <infoLink name="Archemedies Favor" id="ff88-3d34-5dab-bfaa" hidden="false" type="rule" targetId="de8e-f9ce-773d-38d1"/>
+        <infoLink name="Sweep" id="b689-67aa-af10-858c" hidden="false" type="rule" targetId="e43e-2ba5-31b4-b850"/>
       </infoLinks>
       <rules>
         <rule name="Fervor and Resilience" id="9402-b339-706b-8ff5" hidden="false">
@@ -323,16 +300,16 @@
         <categoryLink name="2. LEADER" hidden="false" id="37ea-5e99-6c62-b0f1" targetId="c711-21ec-ff7b-5c9b" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="45"/>
+        <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="55"/>
       </costs>
       <profiles>
         <profile name="Valkyrie" typeId="b914-10a3-f378-a757" typeName="Model" hidden="false" id="c6d5-214b-09be-af55">
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">12&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
-            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">5</characteristic>
-            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">3+</characteristic>
-            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
+            <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">4+</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">1</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">1</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Infantry, Resolute 5+, Dexterous 6+, Storm 3, Leader, Cult</characteristic>
           </characteristics>
@@ -352,8 +329,8 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">3</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
-            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
+            <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">2</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">2</characteristic>
             <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Lance, Fear 1</characteristic>
@@ -484,7 +461,7 @@
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile, Fear</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Versatile, Fear 1</characteristic>
           </characteristics>
         </profile>
         <profile name="Mutated Apendages" typeId="2cf3-62b2-eb6d-7bd0" typeName="Weapon" hidden="false" id="b9d1-5518-1c4a-e5e3">
@@ -495,7 +472,7 @@
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-4</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">1</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 4</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 4, Sweep</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -505,6 +482,7 @@
         <infoLink name="Resolute 4+" id="c53f-7c2c-1c02-5c0c" hidden="false" type="rule" targetId="2057-6dbd-3f2f-6bc0"/>
         <infoLink name="Versatile" id="88a1-60af-b321-8c01" hidden="false" type="rule" targetId="33cf-76af-c14b-5930"/>
         <infoLink name="Archemedies Favor" id="721b-d608-cd3b-2745" hidden="false" type="rule" targetId="de8e-f9ce-773d-38d1"/>
+        <infoLink name="Sweep" id="2222-67fa-5447-122b" hidden="false" type="rule" targetId="e43e-2ba5-31b4-b850"/>
       </infoLinks>
       <rules>
         <rule name="Mound of Flesh" id="b33c-c34e-4f2b-bc36" hidden="false">
@@ -569,7 +547,7 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Disciple" hidden="false" id="0850-f192-bd94-5af2">
       <categoryLinks>
-        <categoryLink name="3. BATTLELINE" hidden="false" id="f2a6-c8a8-3485-39d8" targetId="fafa-f4e5-0d0a-3504" primary="true"/>
+        <categoryLink targetId="0334-a6c5-1a87-f595" id="2df4-943c-dbc0-aef0" primary="true" name="4. SPECIALISTS"/>
       </categoryLinks>
       <costs>
         <cost name="pts" typeId="bb7d-e34d-86d9-06f6" value="30"/>
@@ -674,11 +652,11 @@
           <characteristics>
             <characteristic name="Range" typeId="20d0-057c-e834-f456">Melee</characteristic>
             <characteristic name="Attacks" typeId="2885-8c70-8c49-e47c">4</characteristic>
-            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">2+</characteristic>
+            <characteristic name="Hit Chance" typeId="88af-53c6-0bd5-8a67">3+</characteristic>
             <characteristic name="Dodge Reduction" typeId="7548-07f2-ed1b-8cae">-3</characteristic>
             <characteristic name="Caliber" typeId="1657-d240-f189-3604">1</characteristic>
             <characteristic name="Damage" typeId="e9d1-6af5-9b63-d2f6">3</characteristic>
-            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2</characteristic>
+            <characteristic name="Keywords" typeId="1826-b098-9474-5a8d">Fear 2, Sweep</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -686,6 +664,7 @@
         <infoLink name="Fear 2" id="eead-38f4-b644-fa28" hidden="false" type="rule" targetId="6e76-47e7-e2a9-25c7"/>
         <infoLink name="Resolute 6+" id="9345-1707-ae72-cad3" hidden="false" type="rule" targetId="2e45-02ce-37e8-5ecd"/>
         <infoLink name="Archemedies Favor" id="df32-af1a-bc56-6ae0" hidden="false" type="rule" targetId="de8e-f9ce-773d-38d1"/>
+        <infoLink name="Sweep" id="ad75-514b-8e9e-8aa7" hidden="false" type="rule" targetId="e43e-2ba5-31b4-b850"/>
       </infoLinks>
       <rules>
         <rule name="Dark Pact" id="f286-0254-4307-478a" hidden="false">
@@ -712,7 +691,7 @@
       </profiles>
       <rules>
         <rule name="Screams of the Damned" id="8599-6370-7ffc-c8bf" hidden="false">
-          <description>All enemy models within 6&quot; of this model have a -1 modifier to their RESOLVE checks.</description>
+          <description>All enemy models within 3&quot; of this model have a -1 modifier to their HIT CHANCE stat on ranged weapons.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -722,6 +701,9 @@
       <categoryLinks>
         <categoryLink targetId="19ce-5b4b-a7ec-b47d" id="df3d-baa8-cf15-2e94" primary="true" name="5. FORTIFICATIONS"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="a7d7-81d1-81bb-2aca" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Perfect Visage" hidden="false" id="daa3-e146-56ce-c6bb">
       <costs>
@@ -742,7 +724,7 @@
       </profiles>
       <rules>
         <rule name="Inspiring Presence" id="0651-6e5e-bafd-64af" hidden="false">
-          <description>All friendly models within 6&quot; of this model have a +1 modifier to their RESOLVE checks.</description>
+          <description>All friendly models within 6&quot; of this model have a +1 modifier to their MOVEMENT stat.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -752,6 +734,9 @@
       <categoryLinks>
         <categoryLink targetId="19ce-5b4b-a7ec-b47d" id="7993-1af5-8d8b-5b74" primary="true" name="5. FORTIFICATIONS"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0348-3ecd-3601-45ec" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>
@@ -761,7 +746,7 @@
 - Hasten: 30 BLESSING TOKENS: Increase this model&apos;s MOVEMENT stat by 1&quot; for the rest of the game.
 - Blessing: 40 BLESSING TOKENS: Increase this model&apos;s maximum HEALTH stat by 1, and heal this model by 1 HEALTH. 
 - Purgation: 40 BLESSING TOKENS: Increase the DAMAGE stat of 1 weapon equipped by this model by 1 for the rest of the game.
-- Holocaust: 60 BLESSING TOKENS: Target model must have the LEADER keyword. All models within 6&quot; including this model take D3 damage.</description>
+- Holocaust: 60 BLESSING TOKENS: Target model must have the LEADER keyword. All models within 3&quot; including this model take D3 damage. This model takes 6 damage instead.</description>
     </rule>
   </sharedRules>
 </catalogue>

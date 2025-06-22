@@ -123,7 +123,7 @@
       <description>When a model is equipped with a weapon with Cumbersome, if the model equipped with this weapon moved this turn this model suffers a -1 penalty to this weapons HIT CHANCE.</description>
     </rule>
     <rule name="Mortar" id="e402-d816-d773-fd47" hidden="false">
-      <description>When a model is equipped with a weapon with Mortar, when declaring attacks against a model, you may select a model that is not within line of sight. If you do so then set this weapon&apos;s DODGE REDUCTION stat to 0.</description>
+      <description>When a model is equipped with a weapon with Mortar, when declaring attacks against a model, you may select a model that is not within line of sight. If you do so then set this weapon&apos;s DODGE REDUCTION stat to 0. If a model is declared a target this way they do not have benefit of half cover.</description>
     </rule>
     <rule name="Close Quarters 1" id="de51-db00-5859-2bf8" hidden="false">
       <description>When a model is equipped with a weapon with Close Quarters, the DAMAGE stat of this weapon in increased by 1 when the target is within half of the RANGE stat of this weapon.</description>
@@ -186,13 +186,19 @@
       <description>In the deployment phase, place this model somewhere in your area of control.</description>
     </rule>
     <rule name="Fortification - Far" id="5d78-c120-6bab-bafd" hidden="false">
-      <description>In the deployment phase, you may place this model somewhere in no man&apos;s land, wholly within 16&quot; of your area of control and 3&quot; away from any supply point.</description>
+      <description>In the deployment phase, you may place this model somewhere in no man&apos;s land, wholly within 16&quot; of your area of control and 3&quot; away from any supply point. This model may also not be deployed in or on top of a trench.</description>
     </rule>
     <rule name="Spread 2" id="96b6-6dd1-8a58-2256" hidden="false">
       <description>When a model is equipped with a weapon with Spread, the DODGE REDUCTION stat of this weapon increases by 2 when within half range.</description>
     </rule>
     <rule name="Multiple Weapons" id="7ec1-2c5f-6162-a344" hidden="false">
       <description>When a model has multiple weapons it may use all of them in one activation, and may declare different targets for each weapon.</description>
+    </rule>
+    <rule name="Sweep" id="e43e-2ba5-31b4-b850" hidden="false">
+      <description>When this model attacks with this weapon they may split the ATTACKS stat of this weapon in between models within range.</description>
+    </rule>
+    <rule name="Dexterous 10+" id="3c5a-94e0-8b98-92b8" hidden="false">
+      <description>When this model makes a DODGE check, the DODGE CHANCE stat of this model cannot be modified in any way to be worse then a 10+.</description>
     </rule>
   </sharedRules>
 </gameSystem>

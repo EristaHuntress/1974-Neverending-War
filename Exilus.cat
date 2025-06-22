@@ -189,31 +189,6 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b9f-13d8-4147-642c"/>
           </constraints>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Commander Stature" id="f617-d83f-1adf-a7b5" hidden="false" sortIndex="4">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Feared" hidden="false" id="44bf-fc3d-00f4-9396">
-              <profiles>
-                <profile name="Feared" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="7243-41a6-4a82-e571">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All enemy models within 18&quot; have a -1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Respected" hidden="false" id="5981-72ed-d6a3-d296">
-              <profiles>
-                <profile name="Respected" typeId="1800-5be8-ae8e-d239" typeName="Upgrade" hidden="false" id="bfba-ae7d-ce01-651c">
-                  <characteristics>
-                    <characteristic name="Effects / Special Rules" typeId="a81f-9255-457f-d490">All friendly models within 18&quot; have +1 modifier to RESOLVE checks.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-            </selectionEntry>
-          </selectionEntries>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50d7-02da-3cb0-4780"/>
-          </constraints>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Commander Abilities" id="8a0f-733e-d072-1be5" hidden="false" sortIndex="2">
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Ambush Squad" hidden="false" id="9b89-71a9-74dc-435e">
@@ -415,7 +390,7 @@
       </profiles>
       <rules>
         <rule name="Prime Position" id="e552-61ae-61be-b7eb" hidden="false">
-          <description>Weapons equipped by this model gain the Precision keyword when targeting a model that this model would have benefit of cover from.</description>
+          <description>Weapons equipped by this model gain the Precise keyword when targeting a model that this model would have benefit of cover from.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -531,7 +506,7 @@
           <characteristics>
             <characteristic name="Move" typeId="2461-dd54-666a-0e1f">12&quot;</characteristic>
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">6+</characteristic>
-            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">2</characteristic>
+            <characteristic name="Health" typeId="ff80-35f3-d55b-7056">4</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
             <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
@@ -688,7 +663,7 @@
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">3+</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">6</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">6+</characteristic>
-            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">3</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">2</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">2</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Heavy, Dexterous 9+, Specialist, Exilus</characteristic>
           </characteristics>
@@ -751,13 +726,16 @@
       </profiles>
       <rules>
         <rule name="Lay in Wait" id="5bed-9d78-6933-f7cc" hidden="false">
-          <description>If an enemy model mover over or within 1&quot; of the center of this model that model immediately takes 2d3 DAMAGE and must end its move within 1&quot; of the center of this model. Models that start their turn on top of this model cannot be affected by this rule for their activation.</description>
+          <description>If an enemy model moves over or within 1&quot; of the center of this model that model immediately takes 2d3 DAMAGE and must end its move within 1&quot; of the center of this model. Models that start their turn on top of this model cannot be affected by this rule for their activation.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink name="Ambush Tactics" id="4ef5-9865-5c58-c02d" hidden="false" type="rule" targetId="dbd1-0b79-f1ae-f55c"/>
         <infoLink name="Fortification - Far" id="bfce-2635-11b0-16f2" hidden="false" type="rule" targetId="5d78-c120-6bab-bafd"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cc20-cf37-8f81-a710" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Tunnel Exit" hidden="false" id="d9bc-25f0-3793-0033">
       <costs>
@@ -773,7 +751,7 @@
             <characteristic name="Resolve" typeId="3fd2-3c03-3e55-568c">-</characteristic>
             <characteristic name="Health" typeId="ff80-35f3-d55b-7056">8</characteristic>
             <characteristic name="Dodge" typeId="9591-4c6f-6496-7efc">10+</characteristic>
-            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">5</characteristic>
+            <characteristic name="Toughness" typeId="a50f-e43e-9fd7-c844">4</characteristic>
             <characteristic name="Strength" typeId="6836-d689-4f69-2bc9">-</characteristic>
             <characteristic name="Keywords" typeId="5205-cffc-fcdd-20c6">Fortification, Exilus</characteristic>
           </characteristics>
@@ -788,6 +766,9 @@
         <infoLink name="Ambush Tactics" id="fa40-e79c-bb34-ff86" hidden="false" type="rule" targetId="dbd1-0b79-f1ae-f55c"/>
         <infoLink name="Fortification - Far" id="38cc-6a20-4fc6-7163" hidden="false" type="rule" targetId="5d78-c120-6bab-bafd"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="333d-7728-34c0-056c" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>
